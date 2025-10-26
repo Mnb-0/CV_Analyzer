@@ -1,0 +1,51 @@
+{
+  "job_title": "Senior AI/ML Engineer (Agentic AI)",
+  "company": "Edge",
+  "location": "Remote / Global",
+  "domain": "Agentic AI, Multi-Agent Systems, LLM Engineering",
+  "key_responsibilities": [
+    "Design and deploy multi-agent or hierarchical reasoning systems capable of planning, self-correction, and collaboration",
+    "Build long-running LLM pipelines using orchestration frameworks (LangGraph, AutoGen, CrewAI, etc.)",
+    "Integrate APIs, knowledge graphs, and vector databases for autonomous decision-making",
+    "Develop and maintain ETL/ELT data pipelines and embedding stores",
+    "Fine-tune and optimize LLMs for performance, cost, and safety",
+    "Collaborate with cross-functional teams to align agent behavior with business goals and compliance"
+  ],
+  "required_skills": [
+    "Python",
+    "LangGraph",
+    "AutoGen",
+    "CrewAI",
+    "Transformer architectures",
+    "Prompt engineering",
+    "Vector databases (Pinecone, Weaviate, Milvus)",
+    "Data pipeline development",
+    "ETL/ELT workflows",
+    "Cloud platforms (AWS, GCP, Azure)",
+    "MLOps",
+    "Autonomous agent design"
+  ],
+  "preferred_skills": [
+    "LLM fine-tuning (LoRA, QLoRA, PEFT)",
+    "Reinforcement learning",
+    "Planning algorithms",
+    "Neuro-symbolic reasoning",
+    "Open-source AI contributions",
+    "Research in autonomous or agentic AI"
+  ],
+  "tools_and_frameworks": [
+    "LangGraph",
+    "AutoGen",
+    "CrewAI",
+    "Pinecone",
+    "Weaviate",
+    "Milvus",
+    "AWS",
+    "GCP",
+    "Azure"
+  ],
+  "education_experience": {
+    "experience_level": "Senior",
+    "focus": "AI/ML, Autonomous Agents, LLM Systems"
+  }
+}

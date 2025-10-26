@@ -1,0 +1,40 @@
+{
+  "job_title": "Data Scientist",
+  "company": "Devsinc",
+  "location": "[Not specified]",
+  "domain": "Machine Learning, Data Science, Analytics",
+  "key_responsibilities": [
+    "Design, develop, and deploy machine learning models including data preprocessing, feature engineering, model selection, training and validation",
+    "Perform exploratory data analysis on structured and unstructured data to uncover patterns and insights",
+    "Collaborate with multidisciplinary teams of data scientists, engineers and business stakeholders to refine data requirements and deliver ML solutions",
+    "Create visualizations and reports translating complex ML findings into actionable business insights",
+    "Pursue learning in advanced ML techniques and incorporate cutting-edge research and tools into projects",
+    "Develop prototypes for predictive models and test effectiveness in real-world scenarios",
+    "Identify opportunities for reuse of insights, datasets, code and models across functions (HR, marketing, etc.)",
+    "Maintain clear verbal and written communication for data needs and results"
+  ],
+  "required_skills": [
+    "Python",
+    "SQL",
+    "scikit-learn",
+    "TensorFlow",
+    "PyTorch",
+    "Data visualization libraries (Seaborn, ggplot2, Matplotlib)",
+    "Feature engineering",
+    "Model validation",
+    "Statistical analysis",
+    "Communication to non-technical stakeholders"
+  ],
+  "preferred_skills": [],
+  "tools_and_frameworks": [
+    "scikit-learn",
+    "TensorFlow",
+    "PyTorch",
+    "Seaborn",
+    "Matplotlib"
+  ],
+  "education_experience": {
+    "experience_level": "Junior (6 months-1.5 years)",
+    "focus": "Data Science, Machine Learning"
+  }
+}

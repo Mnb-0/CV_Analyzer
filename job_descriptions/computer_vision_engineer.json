@@ -1,0 +1,48 @@
+{
+  "job_title": "Computer Vision Engineer",
+  "company": "Motive",
+  "location": "[Not specified]",
+  "domain": "Computer Vision, Embedded Systems, Real-time ML",
+  "key_responsibilities": [
+    "Improve performance of production CV/ML models and algorithms",
+    "Build and optimize CV/ML algorithms for real-time edge platforms (embedded dashcam)",
+    "Write Python and C++ code for CV algorithm development, model compression and porting pipelines",
+    "Convert state-of-the-art research prototypes into production-ready features",
+    "Collaborate with R&D, ML Platform, Embedded, Backend, Frontend teams to deliver end-to-end features",
+    "Solve object detection, segmentation, recognition, and geometric computer vision problems",
+    "Build automated deployment, validation, and active learning pipelines"
+  ],
+  "required_skills": [
+    "Python",
+    "C++",
+    "Computer Vision",
+    "Machine Learning",
+    "Deep Learning",
+    "Embedded algorithm development",
+    "TensorFlow",
+    "PyTorch",
+    "Caffe"
+  ],
+  "preferred_skills": [
+    "AWS (SageMaker, Lambda, EC2, S3, RDS)",
+    "CI/CD",
+    "Terraform",
+    "Docker",
+    "Kubernetes",
+    "Eigen library",
+    "RTOS"
+  ],
+  "tools_and_frameworks": [
+    "TensorFlow",
+    "PyTorch",
+    "Caffe",
+    "AWS SageMaker",
+    "Docker",
+    "Kubernetes",
+    "Terraform"
+  ],
+  "education_experience": {
+    "experience_level": "Intermediate to Senior",
+    "focus": "Computer Vision, Embedded Systems, Deep Learning"
+  }
+}

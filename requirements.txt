@@ -1,0 +1,6 @@
+streamlit
+pdfplumber
+python-docx
+pandas
+matplotlib
+pypdf>=3.9.0
