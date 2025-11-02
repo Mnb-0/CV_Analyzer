@@ -10,53 +10,40 @@ import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 
 # --- Third-Party Libraries ---
-import docx        # For reading text from .docx files
-import pdfplumber  # For reading text from PDF files
-import matplotlib.ticker as mticker  # For formatting chart ticks
+import docx
+import pdfplumber
+import matplotlib.ticker as mticker
 from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg # For embedding charts in Tkinter
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import sv_ttk  # <--- NEW: Import the theme
 
 # === ALGORITHM IMPLEMENTATIONS ===
 # (No changes in this section)
-# Algorithms return (match_count, comparisons)
-
 def _is_word_boundary(text, start, end):
-    """Helper function to check for simple whole-word boundaries."""
     before = text[start - 1] if start > 0 else " "
     after = text[end] if end < len(text) else " "
     return (not before.isalnum()) and (not after.isalnum())
-
 def brute_force_search(text, pattern):
-    """Performs a Brute Force string search."""
-    n = len(text)
-    m = len(pattern)
+    n = len(text); m = len(pattern)
     if m == 0: return 0, 0
     if n < m: return 0, 0
-    comparisons = 0
-    found_count = 0
+    comparisons = 0; found_count = 0
     for i in range(n - m + 1):
         j = 0
         while j < m:
             comparisons += 1
-            if text[i + j] != pattern[j]:
-                break
+            if text[i + j] != pattern[j]: break
             j += 1
         if j == m and _is_word_boundary(text, i, i + m):
             found_count += 1
     return found_count, comparisons
-
 def rabin_karp_search(text, pattern):
-    """Performs a Rabin-Karp string search."""
-    n = len(text)
-    m = len(pattern)
+    n = len(text); m = len(pattern)
     if m == 0: return 0, 0
     if n < m: return 0, 0
-    comparisons = 0
-    found_count = 0
-    base = 256
-    mod = 2305843009213693951  
-    pat_hash = 0
-    win_hash = 0
+    comparisons = 0; found_count = 0
+    base = 256; mod = 2305843009213693951  
+    pat_hash = 0; win_hash = 0
     for i in range(m):
         pat_hash = (pat_hash * base + ord(pattern[i])) % mod
         win_hash = (win_hash * base + ord(text[i])) % mod
@@ -65,9 +52,7 @@ def rabin_karp_search(text, pattern):
         match = True
         for j in range(m):
             comparisons += 1
-            if text[j] != pattern[j]:
-                match = False
-                break
+            if text[j] != pattern[j]: match = False; break
         if match and _is_word_boundary(text, 0, m):
             found_count += 1
     for i in range(1, n - m + 1):
@@ -80,80 +65,55 @@ def rabin_karp_search(text, pattern):
             match = True
             for j in range(m):
                 comparisons += 1
-                if text[i + j] != pattern[j]:
-                    match = False
-                    break
+                if text[i + j] != pattern[j]: match = False; break
             if match and _is_word_boundary(text, i, i + m):
                 found_count += 1
     return found_count, comparisons
-
 def kmp_search(text, pattern):
-    """Performs a Knuth-Morris-Pratt (KMP) string search."""
-    n = len(text)
-    m = len(pattern)
+    n = len(text); m = len(pattern)
     if m == 0: return 0, 0
     if n < m: return 0, 0
-    lps = [0] * m
-    length = 0
-    i = 1
+    lps = [0] * m; length = 0; i = 1
     while i < m:
         if pattern[i] == pattern[length]:
-            length += 1
-            lps[i] = length
-            i += 1
+            length += 1; lps[i] = length; i += 1
         else:
-            if length != 0:
-                length = lps[length - 1]
-            else:
-                lps[i] = 0
-                i += 1
-    comparisons = 0
-    found_count = 0
-    i = 0
-    j = 0
+            if length != 0: length = lps[length - 1]
+            else: lps[i] = 0; i += 1
+    comparisons = 0; found_count = 0; i = 0; j = 0
     while i < n:
         comparisons += 1
         if text[i] == pattern[j]:
-            i += 1
-            j += 1
+            i += 1; j += 1
             if j == m:
                 if _is_word_boundary(text, i - j, i):
                     found_count += 1
                 j = lps[j - 1]
         else:
-            if j != 0:
-                j = lps[j - 1]
-            else:
-                i += 1
+            if j != 0: j = lps[j - 1]
+            else: i += 1
     return found_count, comparisons
 
 # === FILE EXTRACTION UTILITIES ===
-
+# (No changes in this section)
 def extract_text_from_pdf(pdf_file_path):
-    """Extracts all text from a .pdf file using pdfplumber."""
     text = ""
     try:
         with pdfplumber.open(pdf_file_path) as pdf:
             for page in pdf.pages:
                 page_text = page.extract_text()
-                if page_text:
-                    text += page_text + "\n"
+                if page_text: text += page_text + "\n"
         return text
     except Exception as e:
-        print(f"PDF Error: {e}") # Log to console
-        return None 
-
+        print(f"PDF Error: {e}"); return None 
 def extract_text_from_docx(docx_file_path):
-    """Extracts all text from a .docx file using python-docx."""
     text = ""
     try:
         doc = docx.Document(docx_file_path)
-        for para in doc.paragraphs:
-            text += para.text + "\n"
+        for para in doc.paragraphs: text += para.text + "\n"
         return text
     except Exception as e:
-        print(f"DOCX Error: {e}") # Log to console
-        return None
+        print(f"DOCX Error: {e}"); return None
 
 # === MAIN APPLICATION CLASS ===
 
@@ -165,16 +125,16 @@ class CVAnalyzerApp:
         "Knuth-Morris-Pratt (KMP)": kmp_search
     }
     
-    # --- NEW: Weights for weighted scoring ---
+    # Weights for weighted scoring
     MANDATORY_WEIGHT = 0.70  # 70%
     PREFERRED_WEIGHT = 0.30  # 30%
-    MANDATORY_MISS_PENALTY = 0.5 # 50% penalty if any mandatory skill is missing
+    # --- REMOVED hard-coded penalty ---
 
     def __init__(self, root):
         """Constructor for the main application."""
         self.root = root
-        self.root.title("Intelligent CV Analyzer (v2.0)")
-        self.root.geometry("1100x750") # Made window slightly larger
+        self.root.title("Intelligent CV Analyzer") # Title is cleaner
+        self.root.geometry("1100x750") # Reset to good size
 
         # --- Application State Variables ---
         self.cv_filepath = ""
@@ -182,26 +142,28 @@ class CVAnalyzerApp:
         self.performance_data = []
         self.batch_results_data = []
         
-        # --- NEW: State variables for weighted scoring ---
         self.mandatory_keywords = set()
         self.preferred_keywords = set()
-        self.all_keywords_list = [] # Used for performance analysis
+        self.all_keywords_list = []
         
         self.batch_queue = queue.Queue()
         self.batch_thread = None
+
+        # --- NEW: Variable for penalty slider ---
+        self.penalty_var = tk.DoubleVar(value=20.0) # Default 20% penalty
 
         # --- Main Layout ---
         self.main_paned_window = ttk.PanedWindow(root, orient=tk.HORIZONTAL)
         self.main_paned_window.pack(fill=tk.BOTH, expand=True)
 
-        self.input_frame = ttk.Frame(self.main_paned_window, width=350, relief=tk.RIDGE) # Wider
+        self.input_frame = ttk.Frame(self.main_paned_window, width=350, relief=tk.RIDGE)
         self.input_frame.pack_propagate(False) 
         self.main_paned_window.add(self.input_frame, weight=1)
 
         self.output_frame = ttk.Frame(self.main_paned_window, width=750)
         self.main_paned_window.add(self.output_frame, weight=3)
 
-        # --- Output Tabs ---
+        # --- Output Tabs (Order changed) ---
         self.notebook = ttk.Notebook(self.output_frame)
         self.notebook.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
@@ -210,14 +172,14 @@ class CVAnalyzerApp:
         self.tab_performance_table = ttk.Frame(self.notebook)
         self.tab_performance_chart = ttk.Frame(self.notebook)
         self.tab_cv_text = ttk.Frame(self.notebook)
-        self.tab_about = ttk.Frame(self.notebook) # <-- NEW: About Tab
+        self.tab_about = ttk.Frame(self.notebook) 
 
         self.notebook.add(self.tab_results, text="Keyword Results")
         self.notebook.add(self.tab_batch_results, text="Batch Results")
         self.notebook.add(self.tab_performance_table, text="Performance Table")
         self.notebook.add(self.tab_performance_chart, text="Performance Chart")
         self.notebook.add(self.tab_cv_text, text="Extracted CV Text")
-        self.notebook.add(self.tab_about, text="About") # <-- NEW: About Tab Added
+        self.notebook.add(self.tab_about, text="About")
 
         # --- Build Widgets ---
         self.create_input_widgets()
@@ -226,9 +188,9 @@ class CVAnalyzerApp:
         self.create_performance_table_tab_widgets()
         self.create_performance_chart_tab_widgets()
         self.create_cv_text_tab_widgets()
-        self.create_about_tab_widgets() # <-- NEW: Call About Tab builder
+        self.create_about_tab_widgets()
         
-        self.input_frame.grid_rowconfigure(3, weight=1)
+        self.input_frame.grid_rowconfigure(3, weight=1) # Keywords text
         self.input_frame.grid_columnconfigure(0, weight=1)
         
         # --- Status Bar ---
@@ -241,61 +203,94 @@ class CVAnalyzerApp:
         
     # --- GUI Widget Builders ---
     
+    # --- UPDATED: create_input_widgets ---
     def create_input_widgets(self):
         """Populates the left-hand input frame with all controls."""
         self.input_frame.grid_propagate(False)
 
-        ttk.Label(self.input_frame, text="1. Select Job Position:").grid(
-            row=0, column=0, padx=10, pady=(10, 5), sticky="w")
+        # Group 1: Job Selection
+        job_frame = ttk.LabelFrame(self.input_frame, text="1. Job Position")
+        job_frame.grid(row=0, column=0, padx=10, pady=(10, 5), sticky="nsew")
+        job_frame.grid_columnconfigure(0, weight=1)
+
         self.job_options = [
             "Senior AI/ML Engineer (Agentic AI)", "Computer Vision Engineer", "Data Scientist"
         ]
         self.selected_job = tk.StringVar()
         self.job_dropdown = ttk.Combobox(
-            self.input_frame, textvariable=self.selected_job, values=self.job_options, state="readonly"
+            job_frame, textvariable=self.selected_job, values=self.job_options, state="readonly"
         )
-        self.job_dropdown.grid(row=1, column=0, padx=10, pady=5, sticky="ew")
+        self.job_dropdown.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
         self.job_dropdown.bind("<<ComboboxSelected>>", self.load_job_keywords)
         
-        ttk.Label(self.input_frame, text="2. Job Keywords (auto-loaded):").grid(
-            row=2, column=0, padx=10, pady=(10, 5), sticky="w")
-        self.keywords_text = tk.Text(self.input_frame, height=10, width=35, state=tk.DISABLED, wrap=tk.WORD, 
-                                     font=('TkDefaultFont', 9)) # Slightly smaller font
-        self.keywords_text.grid(row=3, column=0, padx=10, pady=5, sticky="nsew")
+        # Group 2: Keywords
+        keywords_frame = ttk.LabelFrame(self.input_frame, text="2. Job Keywords (auto-loaded)")
+        keywords_frame.grid(row=1, column=0, padx=10, pady=5, sticky="nsew")
+        keywords_frame.grid_rowconfigure(0, weight=1)
+        keywords_frame.grid_columnconfigure(0, weight=1)
+        # Set a min-height for this frame so it doesn't collapse
+        keywords_frame.config(height=200) 
         
-        ttk.Label(self.input_frame, text="3. Upload CV:").grid(
-            row=4, column=0, padx=10, pady=(10, 5), sticky="w")
-        self.load_cv_button = ttk.Button(self.input_frame, text="Load CV File", command=self.load_cv)
-        self.load_cv_button.grid(row=5, column=0, padx=10, pady=5, sticky="ew")
-        self.cv_filename_label = ttk.Label(self.input_frame, text="No file loaded.", wraplength=330)
-        self.cv_filename_label.grid(row=6, column=0, padx=10, pady=5, sticky="w")
+        self.keywords_text = tk.Text(keywords_frame, height=10, width=35, state=tk.DISABLED, wrap=tk.WORD, 
+                                     font=('TkDefaultFont', 9))
+        self.keywords_text.grid(row=0, column=0, padx=10, pady=10, sticky="nsew")
         
-        ttk.Label(self.input_frame, text="4. Options:").grid(
-            row=7, column=0, padx=10, pady=(10, 5), sticky="w")
-        self.case_sensitive_var = tk.BooleanVar(value=False)
-        self.case_sensitive_check = ttk.Checkbutton(
-            self.input_frame, text="Case Sensitive Search", variable=self.case_sensitive_var
+        # Group 3: CV Upload
+        cv_frame = ttk.LabelFrame(self.input_frame, text="3. CV")
+        cv_frame.grid(row=2, column=0, padx=10, pady=5, sticky="nsew")
+        cv_frame.grid_columnconfigure(0, weight=1)
+        
+        self.load_cv_button = ttk.Button(cv_frame, text="Load CV File", command=self.load_cv)
+        self.load_cv_button.grid(row=0, column=0, padx=10, pady=10, sticky="ew")
+        self.cv_filename_label = ttk.Label(cv_frame, text="No file loaded.", wraplength=300)
+        self.cv_filename_label.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="w")
+        
+        # --- NEW: Group 4: Scoring Options ---
+        options_frame = ttk.LabelFrame(self.input_frame, text="4. Scoring Options")
+        options_frame.grid(row=3, column=0, padx=10, pady=5, sticky="nsew")
+        options_frame.grid_columnconfigure(0, weight=1)
+
+        self.penalty_label = ttk.Label(options_frame, text="Mandatory Skill Penalty: 20.0%")
+        self.penalty_label.grid(row=0, column=0, padx=10, pady=(10, 5), sticky="w")
+        
+        self.penalty_slider = ttk.Scale(
+            options_frame,
+            from_=0.0,
+            to=100.0,
+            orient=tk.HORIZONTAL,
+            variable=self.penalty_var,
+            command=self.update_penalty_label # Update label on slide
         )
-        self.case_sensitive_check.grid(row=8, column=0, padx=10, pady=5, sticky="w")
+        self.penalty_slider.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="ew")
+
+        # --- Group 5: Actions ---
+        action_frame = ttk.Frame(self.input_frame)
+        # Use grid to push buttons to the bottom
+        action_frame.grid(row=4, column=0, padx=10, pady=(20, 10), sticky="sew")
+        action_frame.grid_columnconfigure(0, weight=1)
 
         self.analyze_button = ttk.Button(
-            self.input_frame, text="Analyze CV", command=self.run_analysis, style="Accent.TButton"
+            action_frame, text="Analyze CV", command=self.run_analysis, style="Accent.TButton"
         )
-        self.analyze_button.grid(row=9, column=0, padx=10, pady=20, sticky="ew")
+        self.analyze_button.grid(row=0, column=0, padx=5, pady=5, sticky="ew")
 
         self.batch_button = ttk.Button(
-            self.input_frame,
-            text="Run Batch Analysis (data/cvs)",
+            action_frame,
+            text="Run Batch Analysis",
             command=self.start_batch_analysis_thread
         )
-        self.batch_button.grid(row=10, column=0, padx=10, pady=5, sticky="ew")
+        self.batch_button.grid(row=1, column=0, padx=5, pady=5, sticky="ew")
         
-        style = ttk.Style()
-        style.configure("Accent.TButton", font=('TkDefaultFont', 12, 'bold'))
+        # This makes the "Actions" frame stick to the bottom
+        self.input_frame.grid_rowconfigure(3, weight=0) # Options frame doesn't expand
+        self.input_frame.grid_rowconfigure(4, weight=1) # Action frame's container expands, pushing it down
+
+    def update_penalty_label(self, value):
+        """Callback to update the penalty label as the slider moves."""
+        self.penalty_label.config(text=f"Mandatory Skill Penalty: {float(value):.1f}%")
 
     def create_results_tab_widgets(self):
         """Populates the 'Keyword Results' tab."""
-        # --- Top Frame for Metrics and Export Button ---
         top_frame = ttk.Frame(self.tab_results)
         top_frame.pack(fill="x", padx=10, pady=10)
         
@@ -304,15 +299,13 @@ class CVAnalyzerApp:
         )
         self.score_label.pack(side=tk.LEFT, padx=10)
 
-        # --- NEW: Export Report Button ---
         self.export_button = ttk.Button(
             top_frame,
             text="Export Report (.txt)",
             command=self.export_single_report,
-            state=tk.DISABLED # Disabled until analysis is run
+            state=tk.DISABLED
         )
         self.export_button.pack(side=tk.RIGHT, padx=10)
-        # --- END NEW ---
 
         lists_frame = ttk.Frame(self.tab_results)
         lists_frame.pack(fill="both", expand=True, padx=10, pady=10)
@@ -383,11 +376,11 @@ class CVAnalyzerApp:
         self.cv_text_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         self.cv_text_widget.pack(fill="both", expand=True, padx=5, pady=5)
 
-    # --- NEW: About Tab Builder ---
+    # --- UPDATED: create_about_tab_widgets ---
     def create_about_tab_widgets(self):
         """Populates the 'About' tab with help text."""
-        about_text_content = """
-        Intelligent CV Analyzer (v2.0)
+        about_text_content = f"""
+        Intelligent CV Analyzer (v2.1)
         ----------------------------------
 
         This application analyzes CVs against job descriptions using three string-matching algorithms.
@@ -395,13 +388,19 @@ class CVAnalyzerApp:
         ALGORITHMS:
         1.  Brute Force: A straightforward algorithm that checks the pattern against every possible position in the text.
         2.  Rabin-Karp: Uses a 'rolling hash' to quickly find potential matches, then verifies them.
-        3.  Knuth-Morris-Pratt (KMP): Uses a pre-computed 'LPS' (Longest Proper Prefix-Suffix) array to skip sections of the text intelligently, avoiding redundant comparisons.
+        3.  Knuth-Morris-Pratt (KMP): Uses a pre-computed 'LPS' array to skip sections of the text intelligently.
 
         SCORING:
         The "Relevance Score" is a weighted average based on the keywords found:
-        -   Mandatory Skills: 70% of the total score
-        -   Preferred Skills: 30% of the total score
-        -   PENALTY: If any *mandatory* skill is missing, the final score is cut in half (x0.5).
+        -   Mandatory Skills: {self.MANDATORY_WEIGHT * 100:.0f}% of the total score
+        -   Preferred Skills: {self.PREFERRED_WEIGHT * 100:.0f}% of the total score
+
+        -   PENALTY: If any *mandatory* skill is missing, the final score is penalized.
+        -   You can control this penalty using the "Scoring Options" slider.
+        -   (e.g., A 20% penalty means the final score is multiplied by 0.80).
+
+        SEARCH:
+        -   Search is always case-insensitive.
 
         FILE LOCATIONS:
         -   Job Descriptions: Loaded from `data/job_descriptions/*.json`
@@ -425,15 +424,10 @@ class CVAnalyzerApp:
 
     # --- Core Logic & Event Handlers ---
     
-    # --- UPDATED: load_job_keywords ---
     def load_job_keywords(self, event=None):
-        """
-        Event handler for the Job Position combobox.
-        Loads keywords from JSON into the text box AND instance variables.
-        """
+        """Loads keywords from JSON into the text box AND instance variables."""
         selected_job_title = self.selected_job.get()
         if not selected_job_title: return
-
         filename_map = {
             "Senior AI/ML Engineer (Agentic AI)": "agentic_ai_engineer.json",
             "Computer Vision Engineer": "computer_vision_engineer.json",
@@ -442,30 +436,23 @@ class CVAnalyzerApp:
         if selected_job_title not in filename_map:
             messagebox.showerror("Error", "Invalid job selection.")
             return
-
         file_path = os.path.join("data", "job_descriptions", filename_map[selected_job_title])
         if not os.path.exists(file_path):
             messagebox.showerror("Error", f"Job description file not found:\n{file_path}")
             return
-
         try:
             with open(file_path, "r", encoding="utf-8") as f: data = json.load(f)
 
-            # --- NEW: Populate keyword sets for scoring ---
             self.mandatory_keywords = set(data.get("required_skills", []))
             self.preferred_keywords = set(data.get("preferred_skills", []))
-            
-            # Combine all lists for the main keyword list
-            # Use sets for automatic de-duplication
             tools = set(data.get("tools_and_frameworks", []))
             all_keywords_set = self.mandatory_keywords | self.preferred_keywords | tools
-            self.all_keywords_list = sorted(list(all_keywords_set)) # Store for analysis
+            self.all_keywords_list = sorted(list(all_keywords_set))
 
             if not self.all_keywords_list:
                 messagebox.showwarning("Warning", f"No keywords found in '{file_path}'.")
                 return
 
-            # --- NEW: Populate text box with formatted categories ---
             self.keywords_text.config(state=tk.NORMAL)
             self.keywords_text.delete("1.0", tk.END)
             
@@ -474,19 +461,15 @@ class CVAnalyzerApp:
                 self.keywords_text.insert(tk.END, kw + "\n")
             
             self.keywords_text.insert(tk.END, "\n# --- PREFERRED SKILLS ---\n")
-            # Show preferred skills that aren't already listed as mandatory
             for kw in sorted(list(self.preferred_keywords - self.mandatory_keywords)):
                 self.keywords_text.insert(tk.END, kw + "\n")
 
-            # Show tools that aren't in either list
             other_tools = tools - self.mandatory_keywords - self.preferred_keywords
             if other_tools:
                 self.keywords_text.insert(tk.END, "\n# --- OTHER TOOLS ---\n")
                 for kw in sorted(list(other_tools)):
                     self.keywords_text.insert(tk.END, kw + "\n")
-
             self.keywords_text.config(state=tk.DISABLED)
-
         except Exception as e:
             messagebox.showerror("Error", f"Failed to load job description from JSON:\n{e}")
 
@@ -501,30 +484,25 @@ class CVAnalyzerApp:
         filename = os.path.basename(filepath)
         self.cv_filename_label.config(text=f"Loaded: {filename}")
         self.cv_text_content = ""
-        if filepath.endswith(".pdf"):
-            self.cv_text_content = extract_text_from_pdf(filepath)
-        elif filepath.endswith(".docx"):
-            self.cv_text_content = extract_text_from_docx(filepath)
-        else:
-            messagebox.showwarning("Warning", "Unknown file type.")
-            return
+        if filepath.endswith(".pdf"): self.cv_text_content = extract_text_from_pdf(filepath)
+        elif filepath.endswith(".docx"): self.cv_text_content = extract_text_from_docx(filepath)
+        else: messagebox.showwarning("Warning", "Unknown file type."); return
+            
         if self.cv_text_content:
             self.cv_text_widget.config(state=tk.NORMAL)
             self.cv_text_widget.delete("1.0", tk.END)
             self.cv_text_widget.insert("1.0", self.cv_text_content)
             self.cv_text_widget.config(state=tk.DISABLED)
-            self.export_button.config(state=tk.DISABLED) # Disable export on new CV
+            self.export_button.config(state=tk.DISABLED)
         else:
             self.cv_filename_label.config(text="Failed to read text from file.")
 
-    # --- UPDATED: run_analysis (Weighted Scoring) ---
+    # --- UPDATED: run_analysis (uses penalty_var, no case_sensitive) ---
     def run_analysis(self):
         """Event handler for the 'Analyze CV' button. (Runs on main thread)"""
-        
         self.status_label.config(text="Analyzing...")
         self.root.update_idletasks()
         
-        # --- 1. Get Inputs and Validate ---
         if not self.selected_job.get() or not self.all_keywords_list:
             messagebox.showerror("Error", "Please select a job position first.")
             self.status_label.config(text="Error. Ready.")
@@ -539,66 +517,53 @@ class CVAnalyzerApp:
             return
 
         self.performance_data.clear()
-        is_case_sensitive = self.case_sensitive_var.get()
-        cv_text_to_search = self.cv_text_content if is_case_sensitive else self.cv_text_content.lower()
+        # --- REMOVED: is_case_sensitive, now hardcoded to False ---
+        cv_text_to_search = self.cv_text_content.lower()
         
-        # --- 2. Run All Algorithms for Comparison & Scoring ---
-        
-        # We only need to calculate score once. We'll use the first algo's results for it.
-        # But we run *all* algos for performance comparison.
         final_score = 0.0
         
         for algo_name, algo_func in self.ALGORITHMS.items():
-            
-            matched_keywords_list = [] # For the UI list
-            missing_keywords_list = [] # For the UI list
-            
-            # --- NEW: Counters for weighted scoring ---
+            matched_keywords_list = []
+            missing_keywords_list = []
             matched_mandatory = 0
             matched_preferred = 0
             total_comparisons = 0
-            
             start_time = time.perf_counter()
             
-            # Use self.all_keywords_list for the performance check
             for keyword in self.all_keywords_list:
-                keyword_to_find = keyword if is_case_sensitive else keyword.lower()
-                
+                # --- CHANGED: keyword_to_find is always lowercase ---
+                keyword_to_find = keyword.lower()
                 found_count, comparisons = algo_func(cv_text_to_search, keyword_to_find)
-                
                 total_comparisons += comparisons
                 
                 if found_count > 0:
                     matched_keywords_list.append(keyword)
-                    # Check which category it belongs to for scoring
-                    if keyword in self.mandatory_keywords:
-                        matched_mandatory += 1
-                    elif keyword in self.preferred_keywords:
-                        matched_preferred += 1
+                    if keyword in self.mandatory_keywords: matched_mandatory += 1
+                    elif keyword in self.preferred_keywords: matched_preferred += 1
                 else:
                     missing_keywords_list.append(keyword)
             
             end_time = time.perf_counter()
             execution_time_ms = (end_time - start_time) * 1000
             
-            # --- NEW: Weighted Scoring Logic ---
-            # Calculate score components
+            # --- UPDATED: Weighted Scoring Logic with Penalty Slider ---
             score_mand = 100.0
             if self.mandatory_keywords:
                 score_mand = (matched_mandatory / len(self.mandatory_keywords)) * 100
-
             score_pref = 100.0
             if self.preferred_keywords:
                 score_pref = (matched_preferred / len(self.preferred_keywords)) * 100
 
-            # Calculate weighted score
             weighted_score = (score_mand * self.MANDATORY_WEIGHT) + (score_pref * self.PREFERRED_WEIGHT)
 
             # Apply penalty if any mandatory skills are missing
             if matched_mandatory < len(self.mandatory_keywords):
-                weighted_score *= self.MANDATORY_MISS_PENALTY
+                # Get penalty from slider (e.g., 20.0)
+                penalty_percent = self.penalty_var.get()
+                # Calculate multiplier (e.g., 1.0 - (20.0 / 100.0) = 0.80)
+                penalty_multiplier = 1.0 - (penalty_percent / 100.0)
+                weighted_score *= penalty_multiplier
             
-            # Store this score (it should be the same for all algos)
             final_score = weighted_score
             
             self.performance_data.append({
@@ -606,64 +571,59 @@ class CVAnalyzerApp:
                 "score": final_score, "matched": matched_keywords_list, "missing": missing_keywords_list
             })
 
-        # --- 3. Update GUI Tabs with New Data ---
+        # --- Update GUI ---
         if not self.performance_data:
             messagebox.showinfo("Info", "Analysis complete, but no data was generated.")
             self.status_label.config(text="Ready.")
             return
 
-        # Update Score Label with final weighted score
         self.score_label.config(text=f"Relevance Score: {final_score:.2f}%")
-        
-        # Use first result's lists to populate the UI
         first_result = self.performance_data[0]
         self.matched_list.delete(0, tk.END)
         for item in first_result['matched']: self.matched_list.insert(tk.END, item)
         self.missing_list.delete(0, tk.END)
         for item in first_result['missing']: self.missing_list.insert(tk.END, item)
-
         self.update_performance_table()
         self.update_performance_chart()
-        
         self.notebook.select(self.tab_results)
-        self.export_button.config(state=tk.NORMAL) # Enable export
+        self.export_button.config(state=tk.NORMAL)
         self.status_label.config(text="Analysis complete. Ready.")
         
     # --- THREADING FUNCTIONS ---
     
-    # --- UPDATED: start_batch_analysis_thread ---
+    # --- UPDATED: start_batch_analysis_thread (pass penalty_var) ---
     def start_batch_analysis_thread(self):
         """Validates inputs and starts the batch analysis worker thread."""
         if self.batch_thread and self.batch_thread.is_alive():
             messagebox.showwarning("In Progress", "Batch analysis is already running.")
             return
 
-        # --- VALIDATION CHANGED: Check for loaded keywords, not text box ---
         if not self.selected_job.get() or not self.all_keywords_list:
             messagebox.showerror("Error", "Please select a job position first.")
             return
             
-        case_sensitive = self.case_sensitive_var.get()
+        # --- NEW: Get penalty value from slider ---
+        penalty_value = self.penalty_var.get()
 
         self.status_label.config(text="Running batch analysis... This may take a while.")
         self.batch_button.config(state=tk.DISABLED)
         self.analyze_button.config(state=tk.DISABLED)
 
-        # --- NEW: Pass the keyword SETS to the worker ---
+        # --- UPDATED: Pass penalty_value, remove case_sensitive ---
         self.batch_thread = threading.Thread(
             target=self.run_batch_analysis_worker, 
             args=(
                 self.mandatory_keywords.copy(), 
                 self.preferred_keywords.copy(), 
                 self.all_keywords_list.copy(),
-                case_sensitive
+                penalty_value # Pass the penalty value
             ),
             daemon=True
         )
         self.batch_thread.start()
 
-    # --- UPDATED: run_batch_analysis_worker (Weighted Scoring) ---
-    def run_batch_analysis_worker(self, mandatory_keywords, preferred_keywords, all_keywords, case_sensitive):
+    # --- UPDATED: run_batch_analysis_worker (use penalty_value) ---
+    def run_batch_analysis_worker(self, mandatory_keywords, preferred_keywords, all_keywords, penalty_value):
         """
         This is the main batch logic. Runs on a WORKER thread.
         Uses weighted scoring.
@@ -672,7 +632,6 @@ class CVAnalyzerApp:
             cvs_dir = os.path.join("data", "cvs")
             if not os.path.exists(cvs_dir):
                 raise FileNotFoundError(f"CVs folder not found: {cvs_dir}")
-
             files = [f for f in os.listdir(cvs_dir) if f.lower().endswith((".pdf", ".docx"))]
             if not files:
                 raise FileNotFoundError("No CV files found in data/cvs")
@@ -680,65 +639,54 @@ class CVAnalyzerApp:
             json_report_data = []
             batch_ui_data = []
             unique_names = sorted(list(set(os.path.splitext(f)[0] for f in files)))
-            
-            # Use KMP for scoring, as it's efficient
             score_algo_func = self.ALGORITHMS["Knuth-Morris-Pratt (KMP)"]
 
             for name in unique_names:
-                pdf_path = os.path.join(cvs_dir, name + ".pdf")
-                docx_path = os.path.join(cvs_dir, name + ".docx")
+                pdf_path = os.path.join(cvs_dir, name + ".pdf"); docx_path = os.path.join(cvs_dir, name + ".docx")
                 text = None
                 if os.path.exists(pdf_path): text = extract_text_from_pdf(pdf_path)
                 elif os.path.exists(docx_path): text = extract_text_from_docx(docx_path)
-                    
-                if not text:
-                    print(f"Skipping {name}, could not read text.")
-                    continue
+                if not text: continue
                 
-                text_to_search = text if case_sensitive else text.lower()
+                # --- Hardcoded case-insensitive ---
+                text_to_search = text.lower()
                 
                 # --- 1. Calculate Weighted Score ---
-                matched_mandatory = 0
-                matched_preferred = 0
-                
-                # We only need to search for keywords relevant to scoring
+                matched_mandatory = 0; matched_preferred = 0
                 scoring_keywords = mandatory_keywords | preferred_keywords
                 
                 for keyword in scoring_keywords:
-                    kw_find = keyword if case_sensitive else keyword.lower()
+                    # --- Hardcoded case-insensitive ---
+                    kw_find = keyword.lower()
                     found_count, _ = score_algo_func(text_to_search, kw_find)
                     if found_count > 0:
-                        if keyword in mandatory_keywords:
-                            matched_mandatory += 1
-                        elif keyword in preferred_keywords:
-                            matched_preferred += 1
+                        if keyword in mandatory_keywords: matched_mandatory += 1
+                        elif keyword in preferred_keywords: matched_preferred += 1
                 
                 score_mand = 100.0
-                if mandatory_keywords:
-                    score_mand = (matched_mandatory / len(mandatory_keywords)) * 100
+                if mandatory_keywords: score_mand = (matched_mandatory / len(mandatory_keywords)) * 100
                 score_pref = 100.0
-                if preferred_keywords:
-                    score_pref = (matched_preferred / len(preferred_keywords)) * 100
+                if preferred_keywords: score_pref = (matched_preferred / len(preferred_keywords)) * 100
                 
                 cv_score = (score_mand * self.MANDATORY_WEIGHT) + (score_pref * self.PREFERRED_WEIGHT)
                 if matched_mandatory < len(mandatory_keywords):
-                    cv_score *= self.MANDATORY_MISS_PENALTY
+                    # --- Use penalty_value passed to thread ---
+                    penalty_multiplier = 1.0 - (penalty_value / 100.0)
+                    cv_score *= penalty_multiplier
                 
                 batch_ui_data.append({"cv_name": name, "score": cv_score})
 
-                # --- 2. Calculate Performance for all Algos (using ALL keywords) ---
+                # --- 2. Calculate Performance ---
                 json_entry = {"cv_name": name, "score": cv_score, "results": []}
                 for algo_name, algo_func in self.ALGORITHMS.items():
                     total_comparisons = 0
                     start = time.perf_counter()
-                    # Run performance check on *all* keywords for consistency
                     for kw in all_keywords: 
-                        kw_find = kw if case_sensitive else kw.lower()
+                        kw_find = kw.lower() # Hardcoded
                         _, comps = algo_func(text_to_search, kw_find)
                         total_comparisons += comps
                     end = time.perf_counter()
                     exec_time = (end - start) * 1000
-                    
                     json_entry["results"].append({
                         "algorithm": algo_name, "time_ms": exec_time, "comparisons": total_comparisons
                     })
@@ -751,9 +699,7 @@ class CVAnalyzerApp:
             
             # 4. Put success message on the queue
             self.batch_queue.put({
-                "status": "SUCCESS",
-                "ui_data": batch_ui_data,
-                "report_path": output_path
+                "status": "SUCCESS", "ui_data": batch_ui_data, "report_path": output_path
             })
         except Exception as e:
             self.batch_queue.put({"status": "ERROR", "message": str(e)})
@@ -762,7 +708,6 @@ class CVAnalyzerApp:
         """Checks the queue for messages from the worker thread."""
         try:
             result = self.batch_queue.get(block=False)
-            
             if result["status"] == "SUCCESS":
                 self.batch_results_data = result["ui_data"]
                 self.update_batch_results_tab()
@@ -772,17 +717,13 @@ class CVAnalyzerApp:
                     f"Ranked results updated.\nFull performance report saved to:\n{result['report_path']}"
                 )
                 self.status_label.config(text="Batch analysis complete. Ready.")
-            
             elif result["status"] == "ERROR":
                 messagebox.showerror("Batch Analysis Error", result["message"])
                 self.status_label.config(text="Error during batch analysis. Ready.")
-            
             self.batch_button.config(state=tk.NORMAL)
             self.analyze_button.config(state=tk.NORMAL)
-
         except queue.Empty:
             pass # No message
-            
         finally:
             self.root.after(100, self.check_batch_queue)
 
@@ -832,69 +773,49 @@ class CVAnalyzerApp:
     def sort_treeview_column(self, tv, col, reverse):
         """Helper to sort a Treeview column when the header is clicked."""
         l = [(tv.set(k, col), k) for k in tv.get_children('')]
-        try:
-            l.sort(key=lambda t: float(t[0]), reverse=reverse)
-        except ValueError:
-            l.sort(key=lambda t: t[0], reverse=reverse)
+        try: l.sort(key=lambda t: float(t[0]), reverse=reverse)
+        except ValueError: l.sort(key=lambda t: t[0], reverse=reverse)
         for index, (val, k) in enumerate(l):
             tv.move(k, '', index)
         tv.heading(col, command=lambda: self.sort_treeview_column(tv, col, not reverse))
 
-    # --- NEW: Export Report Function ---
     def export_single_report(self):
         """Saves the current analysis results to a text file."""
         if not self.performance_data:
-            messagebox.showerror("Error", "No analysis data to export. Please run an analysis first.")
+            messagebox.showerror("Error", "No analysis data to export.")
             return
-
-        # Get data from the (already populated) UI elements and state
         try:
             filename = os.path.basename(self.cv_filepath)
             score = self.score_label.cget("text")
-            
             matched = self.matched_list.get(0, tk.END)
             missing = self.missing_list.get(0, tk.END)
-
-            # Build the report string
             report_content = f"ANALYSIS REPORT FOR: {filename}\n"
             report_content += "===================================\n\n"
             report_content += f"{score}\n\n"
-            
             report_content += "--- MATCHED KEYWORDS ---\n"
             if matched:
                 for item in matched: report_content += f"- {item}\n"
-            else:
-                report_content += "None\n"
-                
+            else: report_content += "None\n"
             report_content += "\n--- MISSING KEYWORDS ---\n"
             if missing:
                 for item in missing: report_content += f"- {item}\n"
-            else:
-                report_content += "None\n"
-                
+            else: report_content += "None\n"
             report_content += "\n\n--- ALGORITHM PERFORMANCE ---\n"
             report_content += f"{'Algorithm':<25} | {'Time (ms)':<15} | {'Comparisons':<15}\n"
             report_content += "-"*60 + "\n"
-            
             for result in self.performance_data:
                 report_content += f"{result['name']:<25} | {result['time']:<15.4f} | {result['comparisons']:,<15}\n"
-
-            # Ask user where to save
+            
             save_path = filedialog.asksaveasfilename(
                 title="Save Report",
                 initialfile=f"CV_Report_{filename}.txt",
                 defaultextension=".txt",
                 filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
             )
-            
-            if not save_path:
-                return # User cancelled
-
+            if not save_path: return
             with open(save_path, "w", encoding="utf-8") as f:
                 f.write(report_content)
-                
             messagebox.showinfo("Export Successful", f"Report saved to:\n{save_path}")
-
         except Exception as e:
             messagebox.showerror("Export Error", f"Could not export report: {e}")
 
@@ -903,4 +824,10 @@ class CVAnalyzerApp:
 if __name__ == "__main__":
     root = tk.Tk()
     app = CVAnalyzerApp(root)
+    
+    # --- NEW: Set the theme ---
+    # Call this *after* creating the app instance
+    # You can change "dark" to "light"
+    sv_ttk.set_theme("dark")
+    
     root.mainloop()
