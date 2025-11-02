@@ -1,0 +1,6092 @@
+[
+    {
+        "cv_name": "21i0320",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.472400061786175,
+                "comparisons": 41519
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.291900012642145,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.111599992029369,
+                "comparisons": 41790
+            }
+        ]
+    },
+    {
+        "cv_name": "21i0340",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.1153999995440245,
+                "comparisons": 55555
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.92849990632385,
+                "comparisons": 34
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.9637999618425965,
+                "comparisons": 55715
+            }
+        ]
+    },
+    {
+        "cv_name": "21i1696",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 2.9770999681204557,
+                "comparisons": 31025
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 17.619800055399537,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.800400019623339,
+                "comparisons": 31312
+            }
+        ]
+    },
+    {
+        "cv_name": "21i1701",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.69639990478754,
+                "comparisons": 47110
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.221900014206767,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.344500019215047,
+                "comparisons": 47312
+            }
+        ]
+    },
+    {
+        "cv_name": "21i1729",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.337799968197942,
+                "comparisons": 42296
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.467999977990985,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.865300026722252,
+                "comparisons": 42527
+            }
+        ]
+    },
+    {
+        "cv_name": "21i1937",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.715599934570491,
+                "comparisons": 46295
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.225900092162192,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.292599973268807,
+                "comparisons": 46516
+            }
+        ]
+    },
+    {
+        "cv_name": "21i2340",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.169200059957802,
+                "comparisons": 55555
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.85289993416518,
+                "comparisons": 34
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.126100033521652,
+                "comparisons": 55715
+            }
+        ]
+    },
+    {
+        "cv_name": "21i2721",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.868600004352629,
+                "comparisons": 37506
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.43610005825758,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.7785000167787075,
+                "comparisons": 37796
+            }
+        ]
+    },
+    {
+        "cv_name": "21i2721.pdf",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.9475999074056745,
+                "comparisons": 37506
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.31770008802414,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.625800018198788,
+                "comparisons": 37796
+            }
+        ]
+    },
+    {
+        "cv_name": "22I-0450",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 2.9903000686317682,
+                "comparisons": 33177
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 18.824699916876853,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.051400068216026,
+                "comparisons": 33458
+            }
+        ]
+    },
+    {
+        "cv_name": "22I-1929",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.626599955372512,
+                "comparisons": 42664
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.749299955554307,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.300900036469102,
+                "comparisons": 42915
+            }
+        ]
+    },
+    {
+        "cv_name": "22I1387",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.153599988669157,
+                "comparisons": 71755
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 42.25379996933043,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.8697999231517315,
+                "comparisons": 71919
+            }
+        ]
+    },
+    {
+        "cv_name": "22i-1899",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.492599935270846,
+                "comparisons": 32825
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 19.848600029945374,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.43450000602752,
+                "comparisons": 33110
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0455",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.813099909573793,
+                "comparisons": 53475
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.22770006302744,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.0088000716641545,
+                "comparisons": 53672
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0466",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.570199922658503,
+                "comparisons": 50745
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.339599983766675,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.081400042399764,
+                "comparisons": 50945
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0469",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.3046999014914036,
+                "comparisons": 32294
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 19.234900013543665,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.022999968379736,
+                "comparisons": 32598
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0484",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.889599957503378,
+                "comparisons": 63534
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 39.11429992876947,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.306999992579222,
+                "comparisons": 63691
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0511",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.224300035275519,
+                "comparisons": 44368
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.47009994648397,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.084400017745793,
+                "comparisons": 44600
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0532",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.561899928376079,
+                "comparisons": 41974
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.425400002859533,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.206200013868511,
+                "comparisons": 42223
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0547",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.788400070741773,
+                "comparisons": 53875
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.65319997444749,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.2007000194862485,
+                "comparisons": 54001
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0556",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.2813999354839325,
+                "comparisons": 48671
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.311100021004677,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.8448999878019094,
+                "comparisons": 48864
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0561",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.0345999877899885,
+                "comparisons": 39752
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.309699958190322,
+                "comparisons": 28
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.853700007312,
+                "comparisons": 40004
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0577",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.054400022141635,
+                "comparisons": 38283
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.38559995405376,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.6548000061884522,
+                "comparisons": 38530
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0582",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.509699996560812,
+                "comparisons": 40786
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.619900001212955,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.99719993583858,
+                "comparisons": 41052
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0597",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.6039000153541565,
+                "comparisons": 42397
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.005899999290705,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.6069999914616346,
+                "comparisons": 42650
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0603",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.450899945572019,
+                "comparisons": 48822
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.055299983359873,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.82130004093051,
+                "comparisons": 49000
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0607",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.605199956335127,
+                "comparisons": 52125
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.498300028033555,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.060700001195073,
+                "comparisons": 52277
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0610",
+        "score": 18.666666666666664,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.0660999258980155,
+                "comparisons": 47743
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.431599959731102,
+                "comparisons": 61
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.780399962328374,
+                "comparisons": 47866
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0613",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.507699933834374,
+                "comparisons": 32784
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 20.377299981191754,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.459500032477081,
+                "comparisons": 33056
+            }
+        ]
+    },
+    {
+        "cv_name": "22i0644",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.3593999948352575,
+                "comparisons": 63967
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.60110000055283,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.0007000574842095,
+                "comparisons": 64114
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1380",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.550400004722178,
+                "comparisons": 51709
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.37139999307692,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.182399996556342,
+                "comparisons": 51905
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1899",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.1472999835386872,
+                "comparisons": 32825
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 18.281200085766613,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.872300101444125,
+                "comparisons": 33110
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1906",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.433400045149028,
+                "comparisons": 45597
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.523200027644634,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.398100009188056,
+                "comparisons": 45826
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1927",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.207700025290251,
+                "comparisons": 40935
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.800100083462894,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.857599920593202,
+                "comparisons": 41199
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1929",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.996899981051683,
+                "comparisons": 42664
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.91460000257939,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.115400020964444,
+                "comparisons": 42915
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1929.docx",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.377199918963015,
+                "comparisons": 42664
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.141900008544326,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.9926000172272325,
+                "comparisons": 42915
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1935",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.154099966399372,
+                "comparisons": 40039
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.97079998627305,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.875100053846836,
+                "comparisons": 40263
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1937",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.880900029093027,
+                "comparisons": 46295
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.519700000993907,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.511900013312697,
+                "comparisons": 46516
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1942",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.443000070750713,
+                "comparisons": 45525
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.275500073097646,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.336199956014752,
+                "comparisons": 45801
+            }
+        ]
+    },
+    {
+        "cv_name": "22i1985",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.9828000376001,
+                "comparisons": 55827
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.64160005003214,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.409599980339408,
+                "comparisons": 56042
+            }
+        ]
+    },
+    {
+        "cv_name": "22i2044",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 10.918600019067526,
+                "comparisons": 91453
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 53.95149998366833,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 9.017799980938435,
+                "comparisons": 91474
+            }
+        ]
+    },
+    {
+        "cv_name": "22i2059",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.72510005440563,
+                "comparisons": 46168
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.740300003439188,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.322200082242489,
+                "comparisons": 46406
+            }
+        ]
+    },
+    {
+        "cv_name": "22i2063",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.404099938459694,
+                "comparisons": 47464
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.918499989435077,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.866900038905442,
+                "comparisons": 47677
+            }
+        ]
+    },
+    {
+        "cv_name": "230059",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.20909991953522,
+                "comparisons": 39175
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.570100078359246,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.884699894115329,
+                "comparisons": 39433
+            }
+        ]
+    },
+    {
+        "cv_name": "23I-2084",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.039799937047064,
+                "comparisons": 65904
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 43.04190003313124,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.742199999280274,
+                "comparisons": 66051
+            }
+        ]
+    },
+    {
+        "cv_name": "23I2503_CV",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.266699987463653,
+                "comparisons": 53556
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.51570009160787,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.081100040115416,
+                "comparisons": 53768
+            }
+        ]
+    },
+    {
+        "cv_name": "23I2508",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.352500011213124,
+                "comparisons": 51743
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.731899944134057,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.694499937817454,
+                "comparisons": 51926
+            }
+        ]
+    },
+    {
+        "cv_name": "23I2608",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.753300036303699,
+                "comparisons": 55124
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.86649996880442,
+                "comparisons": 17
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.2001000149175525,
+                "comparisons": 55340
+            }
+        ]
+    },
+    {
+        "cv_name": "23L-2563",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.066100020892918,
+                "comparisons": 57854
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.089400014840066,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.915599922649562,
+                "comparisons": 57997
+            }
+        ]
+    },
+    {
+        "cv_name": "23L2549",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.7597999908030033,
+                "comparisons": 35594
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 21.778599941171706,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.4561000065878034,
+                "comparisons": 35843
+            }
+        ]
+    },
+    {
+        "cv_name": "23L2563",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.200499949045479,
+                "comparisons": 57854
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.67120002117008,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.8394999941810966,
+                "comparisons": 57997
+            }
+        ]
+    },
+    {
+        "cv_name": "23f0647",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.3406999902799726,
+                "comparisons": 38604
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.910000083968043,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.045300069265068,
+                "comparisons": 38865
+            }
+        ]
+    },
+    {
+        "cv_name": "23f0724",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.617799983359873,
+                "comparisons": 54446
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 37.12190000806004,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.447000010870397,
+                "comparisons": 54641
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-0003",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.100300022400916,
+                "comparisons": 34105
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.012800073251128,
+                "comparisons": 21
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.785699955187738,
+                "comparisons": 34348
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-0012",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.674400086514652,
+                "comparisons": 33817
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.94700003787875,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.720399923622608,
+                "comparisons": 34095
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-2065_CV",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.667700035497546,
+                "comparisons": 41394
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.041500016115606,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.300300031900406,
+                "comparisons": 41646
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-2523",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.94730004761368,
+                "comparisons": 64951
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 40.17039993777871,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.31159998010844,
+                "comparisons": 65107
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-2531",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.516500026918948,
+                "comparisons": 50197
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.646400060504675,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.908000002615154,
+                "comparisons": 50434
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-2584",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.931300016120076,
+                "comparisons": 36992
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.53789990209043,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.5972000332549214,
+                "comparisons": 37232
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-2589",
+        "score": 0.0,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.903600085526705,
+                "comparisons": 42711
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.26759999152273,
+                "comparisons": 0
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.002000067383051,
+                "comparisons": 42953
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-2592",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.702399950474501,
+                "comparisons": 40314
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.43360004387796,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.30570007301867,
+                "comparisons": 40586
+            }
+        ]
+    },
+    {
+        "cv_name": "23i-2655",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.733199999667704,
+                "comparisons": 47602
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.19660003762692,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.269100074656308,
+                "comparisons": 47804
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0003",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.508199985139072,
+                "comparisons": 34105
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.82150001358241,
+                "comparisons": 21
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.5125999711453915,
+                "comparisons": 34348
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0009",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.868599935434759,
+                "comparisons": 44566
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.49549998063594,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.493199987336993,
+                "comparisons": 44795
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0010",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.7900999886915088,
+                "comparisons": 32518
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.02440006658435,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.02989995200187,
+                "comparisons": 32804
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0012",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.961100010201335,
+                "comparisons": 33817
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.089599912054837,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.591999993659556,
+                "comparisons": 34095
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0015",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.33519999589771,
+                "comparisons": 43650
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.474199934862554,
+                "comparisons": 28
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.499300033785403,
+                "comparisons": 43829
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0018",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.404600011184812,
+                "comparisons": 38067
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.300799985416234,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.078500089235604,
+                "comparisons": 38331
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0021",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.149599979631603,
+                "comparisons": 44556
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.02309997100383,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.746200051158667,
+                "comparisons": 44796
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0022",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.376799989491701,
+                "comparisons": 55490
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.20740000810474,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.267499993555248,
+                "comparisons": 55652
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0029",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 11.852400028146803,
+                "comparisons": 99195
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 65.2322000823915,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 10.542700067162514,
+                "comparisons": 99236
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0033",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.477299961261451,
+                "comparisons": 52318
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 37.1752999490127,
+                "comparisons": 42
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.913899978622794,
+                "comparisons": 52496
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0034",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.144899943843484,
+                "comparisons": 37511
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.76959992479533,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.604899954050779,
+                "comparisons": 37779
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0035",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.306300034746528,
+                "comparisons": 60795
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 47.774000093340874,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.342000026255846,
+                "comparisons": 60990
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0038",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 14.041100046597421,
+                "comparisons": 42346
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.79450002871454,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.277399905025959,
+                "comparisons": 42604
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0044",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.52500004414469,
+                "comparisons": 43391
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.56900010071695,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.915100056678057,
+                "comparisons": 43612
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0046",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.963399958796799,
+                "comparisons": 40208
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.943500015884638,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.470400046557188,
+                "comparisons": 40497
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0047",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.501000094227493,
+                "comparisons": 42217
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.304000083357096,
+                "comparisons": 26
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.6261000679805875,
+                "comparisons": 42405
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0052",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.217200007289648,
+                "comparisons": 54530
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.94150000996888,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.093899952247739,
+                "comparisons": 54733
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0055",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.203000036999583,
+                "comparisons": 42796
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.58899992518127,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.810399957932532,
+                "comparisons": 43072
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0056",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.326199905946851,
+                "comparisons": 57314
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 49.07920002005994,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 8.246099925599992,
+                "comparisons": 57491
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0059",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.619299994781613,
+                "comparisons": 43072
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.420599970966578,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.888399969786406,
+                "comparisons": 43332
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0060",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.6621999461203814,
+                "comparisons": 30952
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 20.945900003425777,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.4112000139430165,
+                "comparisons": 31218
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0061",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.580500070005655,
+                "comparisons": 40714
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.042699908837676,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.95750003028661,
+                "comparisons": 40999
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0063",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.983700070530176,
+                "comparisons": 73128
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 50.203200080432,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.916900096461177,
+                "comparisons": 73233
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0069",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.8107000291347504,
+                "comparisons": 33988
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.04480010550469,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.514599986374378,
+                "comparisons": 34274
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0073",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.677499993704259,
+                "comparisons": 41569
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.731100097298622,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.5022000558674335,
+                "comparisons": 41814
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0076",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.808099940419197,
+                "comparisons": 42693
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.984900003299117,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.284600028768182,
+                "comparisons": 42919
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0080",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.164400001987815,
+                "comparisons": 62462
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.221700000576675,
+                "comparisons": 42
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.135600036941469,
+                "comparisons": 62539
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0081",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.474400008097291,
+                "comparisons": 49824
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.29409991763532,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.775099969469011,
+                "comparisons": 50045
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0082",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.905600031837821,
+                "comparisons": 55359
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.352999947965145,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.3934999741613865,
+                "comparisons": 55548
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0085",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.669800030067563,
+                "comparisons": 61901
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.4711999213323,
+                "comparisons": 42
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.054900004528463,
+                "comparisons": 61980
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0089",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.94550000783056,
+                "comparisons": 38250
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.608400089666247,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.6217999877408147,
+                "comparisons": 38511
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0090",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.8059000400826335,
+                "comparisons": 46274
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.89729996584356,
+                "comparisons": 35
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.402699996717274,
+                "comparisons": 46492
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0091",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.114899995736778,
+                "comparisons": 50760
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.065299990586936,
+                "comparisons": 68
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.957200028002262,
+                "comparisons": 50906
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0094",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.206699948757887,
+                "comparisons": 48615
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.41320003103465,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.890899988822639,
+                "comparisons": 48855
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0096",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.416299983859062,
+                "comparisons": 40236
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.111199938692153,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.0487999795004725,
+                "comparisons": 40476
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0098",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.324199981056154,
+                "comparisons": 40171
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.81540001463145,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.9163000183179975,
+                "comparisons": 40429
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0099",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.722399986349046,
+                "comparisons": 37950
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.468700052239,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.7287999875843525,
+                "comparisons": 38243
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0101",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.3808999471366405,
+                "comparisons": 39921
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.98760004527867,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.039699910208583,
+                "comparisons": 40190
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0102",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.806499928236008,
+                "comparisons": 44901
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.10440002940595,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.603100009262562,
+                "comparisons": 45166
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0105",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.358400103636086,
+                "comparisons": 57347
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.774300038814545,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.795999990776181,
+                "comparisons": 57542
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0106",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.185300018638372,
+                "comparisons": 44915
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.415400000289083,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.6721999533474445,
+                "comparisons": 45140
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0106.docx",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.90709999576211,
+                "comparisons": 44915
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.132200008258224,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.554999992251396,
+                "comparisons": 45140
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0109",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.59750001411885,
+                "comparisons": 51574
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.486499985679984,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.198600003495812,
+                "comparisons": 51810
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0113",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.767599981278181,
+                "comparisons": 43804
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.522000018507242,
+                "comparisons": 28
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.346500034444034,
+                "comparisons": 43986
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0114",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.390600020997226,
+                "comparisons": 41412
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.077799917198718,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.688799963332713,
+                "comparisons": 41655
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0115",
+        "score": 13.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.603900062851608,
+                "comparisons": 52165
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.850800034590065,
+                "comparisons": 64
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.05969999358058,
+                "comparisons": 52311
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0116",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.3472000397741795,
+                "comparisons": 38749
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.26139991823584,
+                "comparisons": 40
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.909699968062341,
+                "comparisons": 38980
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0117",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.957200006581843,
+                "comparisons": 59427
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 40.99470004439354,
+                "comparisons": 15
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.276599946431816,
+                "comparisons": 59639
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0119",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.969700054265559,
+                "comparisons": 49558
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.46800005622208,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.39599999319762,
+                "comparisons": 49800
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0120",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.966499960981309,
+                "comparisons": 57605
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 39.02069991454482,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.170899956487119,
+                "comparisons": 57807
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0121",
+        "score": 3.9999999999999996,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.7713000094518065,
+                "comparisons": 41370
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.325900038704276,
+                "comparisons": 88
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.358600010164082,
+                "comparisons": 41545
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0122",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.6373000629246235,
+                "comparisons": 65003
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 43.224999913945794,
+                "comparisons": 36
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.229199982248247,
+                "comparisons": 65153
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0123",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.867699928581715,
+                "comparisons": 42547
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.145199943333864,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.254400031641126,
+                "comparisons": 42780
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0125",
+        "score": 8.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.4657000582665205,
+                "comparisons": 51962
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.0051999296993,
+                "comparisons": 34
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.466799950227141,
+                "comparisons": 52135
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0126",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.120699992403388,
+                "comparisons": 45345
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.42330006044358,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.707199987024069,
+                "comparisons": 45572
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0127",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.461500004865229,
+                "comparisons": 54250
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 39.46360002737492,
+                "comparisons": 11
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.996000021696091,
+                "comparisons": 54463
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0129",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.182900000363588,
+                "comparisons": 41868
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.6953000407666,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.06389990914613,
+                "comparisons": 42122
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0130",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.375700002536178,
+                "comparisons": 45363
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 37.153400015085936,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.877100047655404,
+                "comparisons": 45601
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0130.docx",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.065300014801323,
+                "comparisons": 45315
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.57920004520565,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.836499971337616,
+                "comparisons": 45553
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0131",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.739299955777824,
+                "comparisons": 58817
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 49.60300005041063,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 9.969500009901822,
+                "comparisons": 58961
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0132",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.69529992248863,
+                "comparisons": 49857
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 45.166100026108325,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.314800004474819,
+                "comparisons": 50087
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0135",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 9.258200065232813,
+                "comparisons": 48738
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 39.48729997500777,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.73229999281466,
+                "comparisons": 48951
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0137",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.745000020600855,
+                "comparisons": 49979
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.2440999597311,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.832599989138544,
+                "comparisons": 50136
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0139",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.979500033892691,
+                "comparisons": 34535
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.875500028021634,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.5123000852763653,
+                "comparisons": 34810
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0141",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.404699990525842,
+                "comparisons": 57948
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 39.590699947439134,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.835499963723123,
+                "comparisons": 58137
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0143",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 2.245199983008206,
+                "comparisons": 21097
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 13.341999961994588,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.103899954818189,
+                "comparisons": 21447
+            }
+        ]
+    },
+    {
+        "cv_name": "23i0337",
+        "score": 0.0,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.357600028626621,
+                "comparisons": 50456
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.4455999545753,
+                "comparisons": 0
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.254999967291951,
+                "comparisons": 50722
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2005",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.846899960190058,
+                "comparisons": 65906
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 42.33700002077967,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.643300061114132,
+                "comparisons": 66030
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2024",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.456200054846704,
+                "comparisons": 38746
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.180299930274487,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.35439997818321,
+                "comparisons": 39002
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2065",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.896300029940903,
+                "comparisons": 41206
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.445000014267862,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.459799965843558,
+                "comparisons": 41458
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2082 ",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.1432999316602945,
+                "comparisons": 32884
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.88800000678748,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.071399918757379,
+                "comparisons": 33174
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2084",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.240399998612702,
+                "comparisons": 65904
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 45.874500065110624,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.276999996975064,
+                "comparisons": 66051
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2091",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.121100064367056,
+                "comparisons": 35805
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.301100009121,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.6825001006945968,
+                "comparisons": 36047
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2099",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.500900003127754,
+                "comparisons": 62117
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 37.77299995999783,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.045400048606098,
+                "comparisons": 62280
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2500",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.205099984072149,
+                "comparisons": 59454
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.49160005059093,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.829700035974383,
+                "comparisons": 59648
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2500.docx",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.0819000247865915,
+                "comparisons": 59454
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 40.727099985815585,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 9.578900062479079,
+                "comparisons": 59648
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2501",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.960999940522015,
+                "comparisons": 43930
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.076900052838027,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.52179997228086,
+                "comparisons": 44156
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2502 ",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.479900002479553,
+                "comparisons": 38520
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.850399979390204,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.090399947017431,
+                "comparisons": 38741
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2503",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.059000035747886,
+                "comparisons": 53556
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.60150002501905,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.3485999815166,
+                "comparisons": 53768
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2504",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.637800040654838,
+                "comparisons": 42421
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.745399925857782,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.241799935698509,
+                "comparisons": 42675
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2506",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.953600000590086,
+                "comparisons": 43882
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.462300008162856,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.509699996560812,
+                "comparisons": 44104
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2507",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.342100027017295,
+                "comparisons": 57540
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 43.008600012399256,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.719300057739019,
+                "comparisons": 57725
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2508",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.992799975909293,
+                "comparisons": 51743
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.587400012649596,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.743299960158765,
+                "comparisons": 51926
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2510",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.603800014592707,
+                "comparisons": 38119
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.216099970042706,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.188299993984401,
+                "comparisons": 38374
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2511",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.310300039127469,
+                "comparisons": 43916
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.1138000106439,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.825400072149932,
+                "comparisons": 44166
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2512",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.868800053372979,
+                "comparisons": 41046
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.560600010678172,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.702099948190153,
+                "comparisons": 41306
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2513",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.658199963159859,
+                "comparisons": 38877
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.678499998524785,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.308799980208278,
+                "comparisons": 39114
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2514",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.733500028029084,
+                "comparisons": 71624
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 49.539399915374815,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.912900066003203,
+                "comparisons": 71755
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2515",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.363599910400808,
+                "comparisons": 48325
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.74249998200685,
+                "comparisons": 36
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.097199977375567,
+                "comparisons": 48527
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2517",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.216199952177703,
+                "comparisons": 47082
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.75290001370013,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.463100038468838,
+                "comparisons": 47311
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2518",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.732099991291761,
+                "comparisons": 48392
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.1341999117285,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.439999978989363,
+                "comparisons": 48606
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2520",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.114699946716428,
+                "comparisons": 46680
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.128799960948527,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.71160002052784,
+                "comparisons": 46912
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2522",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.6373999901115894,
+                "comparisons": 33990
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 21.0477999644354,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.3505000174045563,
+                "comparisons": 34288
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2523",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.829399943351746,
+                "comparisons": 64951
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 43.03339996840805,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.329199997708201,
+                "comparisons": 65107
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2525",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.38849993608892,
+                "comparisons": 46780
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.917599961161613,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.885299946181476,
+                "comparisons": 46985
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2526",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.930399987846613,
+                "comparisons": 50847
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.25789994839579,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.399400019086897,
+                "comparisons": 51052
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2531",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.863499944098294,
+                "comparisons": 49553
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.83649995177984,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.2764000138267875,
+                "comparisons": 49786
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2534",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.111999995075166,
+                "comparisons": 36899
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.433500017039478,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.7411999655887485,
+                "comparisons": 37145
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2536",
+        "score": 14.0,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.752600052393973,
+                "comparisons": 35658
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 21.69810002669692,
+                "comparisons": 33
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.478500060737133,
+                "comparisons": 35916
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2537",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.397500052116811,
+                "comparisons": 49699
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.3860999410972,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.5825000163167715,
+                "comparisons": 49909
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2538",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.961899899877608,
+                "comparisons": 38283
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.16510006878525,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.61070001963526,
+                "comparisons": 38522
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2539",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.296900006011128,
+                "comparisons": 41393
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.984399904496968,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.306699964217842,
+                "comparisons": 41647
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2539.docx",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.460899974219501,
+                "comparisons": 42728
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.311500066891313,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.082199884578586,
+                "comparisons": 42977
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2540",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.362900021485984,
+                "comparisons": 59943
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.262899986468256,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.728999967686832,
+                "comparisons": 60051
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2542",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.386599990539253,
+                "comparisons": 42319
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.377699988894165,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.010200034826994,
+                "comparisons": 42557
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2543",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.168600007891655,
+                "comparisons": 48335
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.233000008389354,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.093000014312565,
+                "comparisons": 48547
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2545",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.335699999704957,
+                "comparisons": 45097
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.776800048537552,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.29820001590997,
+                "comparisons": 45308
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2546",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.90260003041476,
+                "comparisons": 37896
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 22.89359993301332,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.143099999055266,
+                "comparisons": 38140
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2548",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.305899936705828,
+                "comparisons": 59779
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.738499999046326,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.733400001190603,
+                "comparisons": 59966
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2550",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.098300007171929,
+                "comparisons": 40102
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.464499972760677,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.774799988605082,
+                "comparisons": 40359
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2552",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.4171000849455595,
+                "comparisons": 62812
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.73020005226135,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.808599991723895,
+                "comparisons": 62984
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2554",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.918599966913462,
+                "comparisons": 47482
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.483199955895543,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.585799993947148,
+                "comparisons": 47715
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2556",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.882599973119795,
+                "comparisons": 56137
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.10180001426488,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.324899917468429,
+                "comparisons": 56311
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2558",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.794500048272312,
+                "comparisons": 59078
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.06999998353422,
+                "comparisons": 39
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.612900014966726,
+                "comparisons": 59269
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2561",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.416799918748438,
+                "comparisons": 52203
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.569499988108873,
+                "comparisons": 67
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.9600000493228436,
+                "comparisons": 52312
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2562",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.550500052981079,
+                "comparisons": 58294
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.82330008409917,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.525300046429038,
+                "comparisons": 58472
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2564",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.650500068441033,
+                "comparisons": 53462
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.19399997033179,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.09680004324764,
+                "comparisons": 53643
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2568",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.344500088132918,
+                "comparisons": 32529
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 19.184500095434487,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.075700020417571,
+                "comparisons": 32818
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2568_Assg_02",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.366599907167256,
+                "comparisons": 32529
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 18.99260003119707,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.073300002142787,
+                "comparisons": 32818
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2571",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.710899967700243,
+                "comparisons": 35935
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 21.261999965645373,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.4118000185117126,
+                "comparisons": 36222
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2572",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.977399996481836,
+                "comparisons": 57772
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.107600037008524,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.354300024919212,
+                "comparisons": 57952
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2573",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.426199990324676,
+                "comparisons": 52469
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.2337001087144,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.953900002874434,
+                "comparisons": 52631
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2574",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 2.710700035095215,
+                "comparisons": 26802
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 15.856299898587167,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.513500046916306,
+                "comparisons": 27122
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2575",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.043199984356761,
+                "comparisons": 48281
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.484500013291836,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.622000036761165,
+                "comparisons": 48484
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2577",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.011599907651544,
+                "comparisons": 59009
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.07090005930513,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.495300098322332,
+                "comparisons": 59205
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2578",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.638199996203184,
+                "comparisons": 34285
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 20.25659999344498,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.2904999097809196,
+                "comparisons": 34537
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2579",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.867899977602065,
+                "comparisons": 57848
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.9749999800697,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.322900018654764,
+                "comparisons": 58019
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2582",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 10.042999987490475,
+                "comparisons": 75016
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 45.13400001451373,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.0940000005066395,
+                "comparisons": 75123
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2583",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.316800041124225,
+                "comparisons": 41585
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.01099999062717,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.9658999303355813,
+                "comparisons": 41812
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2584",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.851999994367361,
+                "comparisons": 36992
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 21.820800029672682,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.4974999725818634,
+                "comparisons": 37232
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2585",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.629200001247227,
+                "comparisons": 60195
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.473099957220256,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.548799992538989,
+                "comparisons": 60372
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2586",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.980899906717241,
+                "comparisons": 46605
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.775400063954294,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.069800070486963,
+                "comparisons": 46795
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2587",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.666300072334707,
+                "comparisons": 54434
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.63410006184131,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.407700082287192,
+                "comparisons": 54604
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2588",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.262900027446449,
+                "comparisons": 37528
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.2274000775069,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.028200055472553,
+                "comparisons": 37774
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2589",
+        "score": 0.0,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.886999959126115,
+                "comparisons": 42302
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.086100006476045,
+                "comparisons": 0
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.105899996124208,
+                "comparisons": 42546
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2590",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.370300077833235,
+                "comparisons": 52833
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.432100063189864,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.66880002245307,
+                "comparisons": 52994
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2591",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.481400061398745,
+                "comparisons": 46134
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.93180000036955,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.034700036048889,
+                "comparisons": 46337
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2592",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 12.427999987266958,
+                "comparisons": 40314
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 54.38200000207871,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.209199946373701,
+                "comparisons": 40586
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2594",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.700500099919736,
+                "comparisons": 41845
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.4295000648126,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.810100003145635,
+                "comparisons": 42072
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2596",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.069100043736398,
+                "comparisons": 55632
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 37.83010004553944,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.957699962891638,
+                "comparisons": 55837
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2597",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.460300017148256,
+                "comparisons": 48356
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.792999943718314,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.998499993234873,
+                "comparisons": 48561
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2599",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.974800045602024,
+                "comparisons": 43818
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.640400036238134,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.5894000213593245,
+                "comparisons": 44020
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2603",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.9594000447541475,
+                "comparisons": 40567
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.743999984115362,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.061699961312115,
+                "comparisons": 40794
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2605",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.23919998947531,
+                "comparisons": 63066
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 49.45129994302988,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.489799987524748,
+                "comparisons": 63206
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2606",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.5322999358177185,
+                "comparisons": 37521
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.074300054460764,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.188799997791648,
+                "comparisons": 37789
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2607",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.174599984660745,
+                "comparisons": 28066
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.650499949231744,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.418899934738874,
+                "comparisons": 28355
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2608",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.9221999514848,
+                "comparisons": 55124
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 47.11540008429438,
+                "comparisons": 17
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.689000059850514,
+                "comparisons": 55340
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2609",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.469000035896897,
+                "comparisons": 31149
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.968199966475368,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.599400050006807,
+                "comparisons": 31428
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2610",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.162000052630901,
+                "comparisons": 51854
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 37.86559996660799,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.565700052306056,
+                "comparisons": 52072
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2614",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.616300109773874,
+                "comparisons": 35821
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.881500078365207,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.814400057308376,
+                "comparisons": 36086
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2615",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.440699962899089,
+                "comparisons": 36472
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 40.807100012898445,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.5567001001909375,
+                "comparisons": 36731
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2616",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 2.807200071401894,
+                "comparisons": 23099
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 16.262000077404082,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.677900018170476,
+                "comparisons": 23423
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2618",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.572699989192188,
+                "comparisons": 54789
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.747600046917796,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.038399995304644,
+                "comparisons": 54942
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2619",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.278400055132806,
+                "comparisons": 59592
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 43.63610001746565,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.57229998614639,
+                "comparisons": 59774
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2621",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.72530010342598,
+                "comparisons": 60752
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 39.54620007425547,
+                "comparisons": 32
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.107200053520501,
+                "comparisons": 60854
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2622",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 9.223499917425215,
+                "comparisons": 75858
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 46.23380000703037,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.5792999705299735,
+                "comparisons": 75937
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2623",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.480799940414727,
+                "comparisons": 51391
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.61720000207424,
+                "comparisons": 33
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.944399978034198,
+                "comparisons": 51579
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2625",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.839199944399297,
+                "comparisons": 46371
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 27.625099988654256,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.097600049339235,
+                "comparisons": 46588
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2628",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.596099955961108,
+                "comparisons": 42047
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.848599918186665,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.9878999814391136,
+                "comparisons": 42269
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2630",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.1796999974176288,
+                "comparisons": 30784
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 18.266500090248883,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.895000041462481,
+                "comparisons": 31048
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2631",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.7110999478027225,
+                "comparisons": 55138
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.94049999769777,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.7891999604180455,
+                "comparisons": 55295
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2634",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.8249000208452344,
+                "comparisons": 35115
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.228900072164834,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.412700003944337,
+                "comparisons": 35397
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2637",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.875300060026348,
+                "comparisons": 63920
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 49.77760009933263,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.551599992439151,
+                "comparisons": 64105
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2641",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.215600016526878,
+                "comparisons": 43651
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.438600039109588,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.710500012151897,
+                "comparisons": 43851
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2643",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.0894000343978405,
+                "comparisons": 53279
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.321799921803176,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.4694999707862735,
+                "comparisons": 53494
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2644",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.409900004044175,
+                "comparisons": 31139
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 19.249800010584295,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.110499936155975,
+                "comparisons": 31420
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2647",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.7221999373286963,
+                "comparisons": 27871
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 17.93199998792261,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.816599910147488,
+                "comparisons": 28165
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2648",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.33540004491806,
+                "comparisons": 36167
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.24799996800721,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.145799903199077,
+                "comparisons": 36416
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2649",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 13.425300014205277,
+                "comparisons": 52774
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 67.77810002677143,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 9.249499998986721,
+                "comparisons": 52949
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2651",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 16.153400065377355,
+                "comparisons": 50457
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 81.0237000696361,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 25.41250002104789,
+                "comparisons": 50668
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2652",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 11.763700051233172,
+                "comparisons": 40723
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 62.566200038418174,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 16.375700011849403,
+                "comparisons": 40999
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2654",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.801699917763472,
+                "comparisons": 50886
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 50.824100035242736,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 9.79210005607456,
+                "comparisons": 51098
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2655",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 9.250000002793968,
+                "comparisons": 50365
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 53.099799901247025,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 10.471799992956221,
+                "comparisons": 50566
+            }
+        ]
+    },
+    {
+        "cv_name": "23i2656",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.891200107522309,
+                "comparisons": 31998
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.003399958834052,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.164700047113001,
+                "comparisons": 32292
+            }
+        ]
+    },
+    {
+        "cv_name": "23i3022",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 12.436400051228702,
+                "comparisons": 67152
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 61.62459996994585,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 10.569399921223521,
+                "comparisons": 67301
+            }
+        ]
+    },
+    {
+        "cv_name": "23i3082",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.641800028271973,
+                "comparisons": 47171
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.228999939747155,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.4029999086633325,
+                "comparisons": 47395
+            }
+        ]
+    },
+    {
+        "cv_name": "23i3250 ",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.8641999969258904,
+                "comparisons": 40446
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.102699904702604,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.626699956133962,
+                "comparisons": 40695
+            }
+        ]
+    },
+    {
+        "cv_name": "23i5032",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.081499905325472,
+                "comparisons": 50368
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 44.17550005018711,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 9.429399971850216,
+                "comparisons": 50550
+            }
+        ]
+    },
+    {
+        "cv_name": "23i5055",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.370099981315434,
+                "comparisons": 32461
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.2718000235036,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.055499914102256,
+                "comparisons": 32720
+            }
+        ]
+    },
+    {
+        "cv_name": "23i6004",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.686799948103726,
+                "comparisons": 33132
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.568899957463145,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.8898999337106943,
+                "comparisons": 33425
+            }
+        ]
+    },
+    {
+        "cv_name": "23i6050",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.877300096675754,
+                "comparisons": 46433
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.05350000038743,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.883499979972839,
+                "comparisons": 46619
+            }
+        ]
+    },
+    {
+        "cv_name": "23i6102",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 10.551800020039082,
+                "comparisons": 51400
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.27849998883903,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.240300019271672,
+                "comparisons": 51584
+            }
+        ]
+    },
+    {
+        "cv_name": "23i6186",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.614699959754944,
+                "comparisons": 53654
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 40.52129993215203,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.108999998308718,
+                "comparisons": 53844
+            }
+        ]
+    },
+    {
+        "cv_name": "23i_2624",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.116800031624734,
+                "comparisons": 33440
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.54719999898225,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.6694000009447336,
+                "comparisons": 33718
+            }
+        ]
+    },
+    {
+        "cv_name": "23l2549",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 9.37270000576973,
+                "comparisons": 35594
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.94049997162074,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.821499926038086,
+                "comparisons": 35843
+            }
+        ]
+    },
+    {
+        "cv_name": "AI System in Tourism (1)",
+        "score": 0.0,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 2.022000029683113,
+                "comparisons": 15143
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 14.996599988080561,
+                "comparisons": 0
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.0685000345110893,
+                "comparisons": 15495
+            }
+        ]
+    },
+    {
+        "cv_name": "Ahmed_Izaan_CV",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.468900013715029,
+                "comparisons": 29935
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.751500024460256,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 12.640399974770844,
+                "comparisons": 30257
+            }
+        ]
+    },
+    {
+        "cv_name": "I220466_AsherAhmed",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.90000001527369,
+                "comparisons": 50745
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 42.43050003424287,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 10.418199934065342,
+                "comparisons": 50945
+            }
+        ]
+    },
+    {
+        "cv_name": "MuhammadSaadResume",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 13.731900020502508,
+                "comparisons": 86973
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 69.0898000029847,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 13.156199944205582,
+                "comparisons": 87030
+            }
+        ]
+    },
+    {
+        "cv_name": "Resume",
+        "score": 0.0,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 0.008599949069321156,
+                "comparisons": 0
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 0.0076999422162771225,
+                "comparisons": 0
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 0.006600050255656242,
+                "comparisons": 0
+            }
+        ]
+    },
+    {
+        "cv_name": "Resume (1)",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.751099929213524,
+                "comparisons": 68428
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 53.401999990455806,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 8.241000003181398,
+                "comparisons": 68624
+            }
+        ]
+    },
+    {
+        "cv_name": "_23i0102",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.301899975165725,
+                "comparisons": 44901
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.47370000462979,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.809700069017708,
+                "comparisons": 45166
+            }
+        ]
+    },
+    {
+        "cv_name": "_23i0117",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.778700044378638,
+                "comparisons": 59427
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.810100057162344,
+                "comparisons": 15
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.957800080068409,
+                "comparisons": 59639
+            }
+        ]
+    },
+    {
+        "cv_name": "cv-pdf",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.862799938768148,
+                "comparisons": 52125
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.88460003770888,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.21530001424253,
+                "comparisons": 52277
+            }
+        ]
+    },
+    {
+        "cv_name": "cv-word docx-assignment-2",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.873600047081709,
+                "comparisons": 58253
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 43.271100032143295,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 8.756800089031458,
+                "comparisons": 58421
+            }
+        ]
+    },
+    {
+        "cv_name": "i212721",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.271999958902597,
+                "comparisons": 55413
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 41.13549995236099,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.20370008982718,
+                "comparisons": 55651
+            }
+        ]
+    },
+    {
+        "cv_name": "i22-0607",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.613599929958582,
+                "comparisons": 58253
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 42.26000001654029,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 8.257200010120869,
+                "comparisons": 58421
+            }
+        ]
+    },
+    {
+        "cv_name": "i22-0607-docx",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.539500064216554,
+                "comparisons": 58253
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 42.645900044590235,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 8.64059990271926,
+                "comparisons": 58421
+            }
+        ]
+    },
+    {
+        "cv_name": "i220455",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.043999921530485,
+                "comparisons": 53475
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.84349998366088,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.813699914142489,
+                "comparisons": 53672
+            }
+        ]
+    },
+    {
+        "cv_name": "i220483",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.678599911741912,
+                "comparisons": 52691
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 39.56750000361353,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.88779994379729,
+                "comparisons": 52842
+            }
+        ]
+    },
+    {
+        "cv_name": "i220483 (2)",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.693799958564341,
+                "comparisons": 52565
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.77930005546659,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.680200061760843,
+                "comparisons": 52722
+            }
+        ]
+    },
+    {
+        "cv_name": "i220532",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.8895000256598,
+                "comparisons": 41974
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 32.634600065648556,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.150399916805327,
+                "comparisons": 42223
+            }
+        ]
+    },
+    {
+        "cv_name": "i220543",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 9.650100022554398,
+                "comparisons": 67745
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 49.339399905875325,
+                "comparisons": 28
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.772200042381883,
+                "comparisons": 67802
+            }
+        ]
+    },
+    {
+        "cv_name": "i220547",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 7.734299986623228,
+                "comparisons": 49671
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 34.856999991461635,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.5596000058576465,
+                "comparisons": 49827
+            }
+        ]
+    },
+    {
+        "cv_name": "i220597",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.63769999705255,
+                "comparisons": 42397
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 31.994899967685342,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.736399976536632,
+                "comparisons": 42650
+            }
+        ]
+    },
+    {
+        "cv_name": "i220607",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.688000052236021,
+                "comparisons": 52125
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.59770006965846,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.375199998728931,
+                "comparisons": 52277
+            }
+        ]
+    },
+    {
+        "cv_name": "i220607-pdf",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.404699990525842,
+                "comparisons": 52125
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.51389991864562,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.715199979022145,
+                "comparisons": 52277
+            }
+        ]
+    },
+    {
+        "cv_name": "i220613",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.4085999727249146,
+                "comparisons": 32784
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 23.09789997525513,
+                "comparisons": 30
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.586999955587089,
+                "comparisons": 33056
+            }
+        ]
+    },
+    {
+        "cv_name": "i221380",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.850000005215406,
+                "comparisons": 51709
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 35.998999956063926,
+                "comparisons": 24
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.657400004565716,
+                "comparisons": 51905
+            }
+        ]
+    },
+    {
+        "cv_name": "i221415",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.116400076076388,
+                "comparisons": 44908
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.756900039501488,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.777399939484894,
+                "comparisons": 45171
+            }
+        ]
+    },
+    {
+        "cv_name": "i221415 ",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.025999969802797,
+                "comparisons": 44908
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.14909995160997,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.706899984739721,
+                "comparisons": 45171
+            }
+        ]
+    },
+    {
+        "cv_name": "i221927",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.76019992493093,
+                "comparisons": 40935
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.813499957323074,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.369599977508187,
+                "comparisons": 41199
+            }
+        ]
+    },
+    {
+        "cv_name": "i230033",
+        "score": 9.333333333333332,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.008500000461936,
+                "comparisons": 52318
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.13170000910759,
+                "comparisons": 42
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.309699918143451,
+                "comparisons": 52496
+            }
+        ]
+    },
+    {
+        "cv_name": "i230083",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.393900024704635,
+                "comparisons": 58789
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 38.09219994582236,
+                "comparisons": 32
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.079200004227459,
+                "comparisons": 58957
+            }
+        ]
+    },
+    {
+        "cv_name": "i230109",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.17110007442534,
+                "comparisons": 51574
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 33.25350000523031,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.474200006574392,
+                "comparisons": 51810
+            }
+        ]
+    },
+    {
+        "cv_name": "i230119",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.789200007915497,
+                "comparisons": 49558
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 37.05500008072704,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 6.14720000885427,
+                "comparisons": 49800
+            }
+        ]
+    },
+    {
+        "cv_name": "i230141",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 6.747499923221767,
+                "comparisons": 57972
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 36.39750008005649,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.13689997792244,
+                "comparisons": 58161
+            }
+        ]
+    },
+    {
+        "cv_name": "i232024",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.870900069363415,
+                "comparisons": 38746
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.638800045475364,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 5.074799992144108,
+                "comparisons": 39002
+            }
+        ]
+    },
+    {
+        "cv_name": "i232065_CV",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.355700035579503,
+                "comparisons": 41206
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 45.485900016501546,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 13.594199903309345,
+                "comparisons": 41458
+            }
+        ]
+    },
+    {
+        "cv_name": "i232507",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 8.835499989800155,
+                "comparisons": 58853
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 48.752799979411066,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 7.623299956321716,
+                "comparisons": 59037
+            }
+        ]
+    },
+    {
+        "cv_name": "i232568",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.274900071322918,
+                "comparisons": 32074
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 25.188500061631203,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.116099909879267,
+                "comparisons": 32362
+            }
+        ]
+    },
+    {
+        "cv_name": "i232568_Assg_02",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.12940005864948,
+                "comparisons": 32529
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 24.213600088842213,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 3.6023000720888376,
+                "comparisons": 32818
+            }
+        ]
+    },
+    {
+        "cv_name": "i232571",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 4.446799983270466,
+                "comparisons": 35935
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 26.517400052398443,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.124700091779232,
+                "comparisons": 36222
+            }
+        ]
+    },
+    {
+        "cv_name": "i232598",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.386200034990907,
+                "comparisons": 43264
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.945900012739003,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.827899974770844,
+                "comparisons": 43507
+            }
+        ]
+    },
+    {
+        "cv_name": "i232598 (1)",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.082299932837486,
+                "comparisons": 42474
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 29.603700037114322,
+                "comparisons": 18
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.479600000195205,
+                "comparisons": 42715
+            }
+        ]
+    },
+    {
+        "cv_name": "i232607",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 3.1235000351443887,
+                "comparisons": 28066
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 18.05610000155866,
+                "comparisons": 6
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 2.8980999486520886,
+                "comparisons": 28355
+            }
+        ]
+    },
+    {
+        "cv_name": "i232627",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.704900017008185,
+                "comparisons": 43746
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 28.32839998882264,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.244299954734743,
+                "comparisons": 43991
+            }
+        ]
+    },
+    {
+        "cv_name": "i235032",
+        "score": 4.666666666666666,
+        "results": [
+            {
+                "algorithm": "Brute Force",
+                "time_ms": 5.429500015452504,
+                "comparisons": 50116
+            },
+            {
+                "algorithm": "Rabin-Karp",
+                "time_ms": 30.573999974876642,
+                "comparisons": 12
+            },
+            {
+                "algorithm": "Knuth-Morris-Pratt (KMP)",
+                "time_ms": 4.906899994239211,
+                "comparisons": 50298
+            }
+        ]
+    }
+]
