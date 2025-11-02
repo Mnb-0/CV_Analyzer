@@ -1,33 +1,25 @@
 # app.py
 # Contains the main CVAnalyzerApp GUI class.
 
-# === IMPORTS ===
-#
-# --- Standard Library ---
 import os
 import time
 import json
 import queue
+import sv_ttk
 import threading
 import tkinter as tk
-from tkinter import ttk, filedialog, messagebox
-
-# --- Third-Party Libraries ---
 import matplotlib.ticker as mticker
 from matplotlib.figure import Figure
+from tkinter import ttk, filedialog, messagebox
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import sv_ttk  # Import the theme
-
-# --- Local Imports ---
-from algorithms import brute_force_search, rabin_karp_search, kmp_search # <-- NEW
-from file_utils import extract_text_from_pdf, extract_text_from_docx      # <-- NEW
+from file_utils import extract_text_from_pdf, extract_text_from_docx
+from algorithms import brute_force_search, rabin_karp_search, kmp_search
 
 
 # === MAIN APPLICATION CLASS ===
 
 class CVAnalyzerApp:
     
-    # --- UPDATED: Use imported functions ---
     ALGORITHMS = {
         "Brute Force": brute_force_search,
         "Rabin-Karp": rabin_karp_search,
@@ -79,23 +71,23 @@ class CVAnalyzerApp:
         self.output_frame = ttk.Frame(self.main_paned_window, width=750)
         self.main_paned_window.add(self.output_frame, weight=3)
 
-        # --- Output Tabs (Order changed) ---
+        # --- Output Tabs ---
         self.notebook = ttk.Notebook(self.output_frame)
         self.notebook.pack(fill=tk.BOTH, expand=True, padx=5, pady=5)
 
         self.tab_about = ttk.Frame(self.notebook) 
         self.tab_results = ttk.Frame(self.notebook)
         self.tab_batch_results = ttk.Frame(self.notebook)
-        self.tab_batch_chart = ttk.Frame(self.notebook) # <-- NEW: Batch Chart Tab
+        self.tab_batch_chart = ttk.Frame(self.notebook)
         self.tab_performance_table = ttk.Frame(self.notebook)
         self.tab_performance_chart = ttk.Frame(self.notebook)
         self.tab_cv_text = ttk.Frame(self.notebook)
 
-        # --- UPDATED: Tab Order ---
+        # --- Tab Order ---
         self.notebook.add(self.tab_about, text="About")
         self.notebook.add(self.tab_results, text="Keyword Results")
         self.notebook.add(self.tab_batch_results, text="Batch Results")
-        self.notebook.add(self.tab_batch_chart, text="Batch Chart") # <-- NEW: Added tab
+        self.notebook.add(self.tab_batch_chart, text="Batch Chart")
         self.notebook.add(self.tab_performance_table, text="Performance Table")
         self.notebook.add(self.tab_performance_chart, text="Performance Chart")
         self.notebook.add(self.tab_cv_text, text="Extracted CV Text")
@@ -104,7 +96,7 @@ class CVAnalyzerApp:
         self.create_input_widgets()
         self.create_results_tab_widgets()
         self.create_batch_results_tab_widgets()
-        self.create_batch_chart_tab_widgets() # <-- NEW: Call builder
+        self.create_batch_chart_tab_widgets()
         self.create_performance_table_tab_widgets()
         self.create_performance_chart_tab_widgets()
         self.create_cv_text_tab_widgets()
@@ -202,7 +194,7 @@ class CVAnalyzerApp:
         )
         self.batch_button.grid(row=1, column=0, padx=5, pady=5, sticky="ew")
 
-        # --- UPDATED: Row Configuration (LAYOUT FIX) ---
+        # --- Row Configuration ---
         self.input_frame.grid_rowconfigure(1, weight=1)
         self.input_frame.grid_rowconfigure(0, weight=0)
         self.input_frame.grid_rowconfigure(2, weight=0)
@@ -235,12 +227,12 @@ class CVAnalyzerApp:
         lists_frame.grid_columnconfigure(1, weight=1)
         lists_frame.grid_rowconfigure(1, weight=1)
         
-        ttk.Label(lists_frame, text="✅ Matched Keywords", font=('TkDefaultFont', 12, 'bold')).grid(
+        ttk.Label(lists_frame, text="Matched Keywords", font=('TkDefaultFont', 12, 'bold')).grid(
             row=0, column=0, pady=5)
         self.matched_list = tk.Listbox(lists_frame, background="#e0ffe0", foreground="#006400")
         self.matched_list.grid(row=1, column=0, sticky="nsew", padx=5)
         
-        ttk.Label(lists_frame, text="❌ Missing Keywords", font=('TkDefaultFont', 12, 'bold')).grid(
+        ttk.Label(lists_frame, text="Missing Keywords", font=('TkDefaultFont', 12, 'bold')).grid(
             row=0, column=1, pady=5)
         self.missing_list = tk.Listbox(lists_frame, background="#ffe0e0", foreground="#a00000")
         self.missing_list.grid(row=1, column=1, sticky="nsew", padx=5)
@@ -323,13 +315,11 @@ class CVAnalyzerApp:
 
     def create_cv_text_tab_widgets(self):
         """Populates the 'Extracted CV Text' tab with a scrollable Text widget."""
-        # --- ROBUST THEME FIX ---
         theme = sv_ttk.get_theme()
         if theme == "dark":
             bg_color = "#2b2b2b"; fg_color = "#ffffff"; insert_color = "#ffffff"
         else:
             bg_color = "#ffffff"; fg_color = "#000000"; insert_color = "#000000"
-        # --- END FIX ---
 
         self.cv_text_widget = tk.Text(
             self.tab_cv_text, 
@@ -383,13 +373,11 @@ class CVAnalyzerApp:
         text_frame = ttk.Frame(self.tab_about, padding=10)
         text_frame.pack(fill=tk.BOTH, expand=True)
 
-        # --- ROBUST THEME FIX ---
         theme = sv_ttk.get_theme()
         if theme == "dark":
             bg_color = "#2b2b2b"; fg_color = "#ffffff"; insert_color = "#ffffff"
         else:
             bg_color = "#ffffff"; fg_color = "#000000"; insert_color = "#000000"
-        # --- END FIX ---
 
         about_text = tk.Text(
             text_frame, 
@@ -465,8 +453,8 @@ class CVAnalyzerApp:
         filename = os.path.basename(filepath)
         self.cv_filename_label.config(text=f"Loaded: {filename}")
         self.cv_text_content = ""
-        
-        # --- UPDATED: Uses imported functions ---
+
+        # --- Uses imported functions ---
         if filepath.endswith(".pdf"): self.cv_text_content = extract_text_from_pdf(filepath)
         elif filepath.endswith(".docx"): self.cv_text_content = extract_text_from_docx(filepath)
         else: messagebox.showwarning("Warning", "Unknown file type."); return
@@ -495,8 +483,8 @@ class CVAnalyzerApp:
         is_case_sensitive = self.case_sensitive_var.get()
         cv_text_to_search = self.cv_text_content if is_case_sensitive else self.cv_text_content.lower()
         final_score = 0.0
-        
-        # --- UPDATED: Accesses self.ALGORITHMS (which now uses imported functions) ---
+
+        # --- Accesses self.ALGORITHMS (which now uses imported functions) ---
         for algo_name, algo_func in self.ALGORITHMS.items():
             matched_keywords_list = []; missing_keywords_list = []
             matched_mandatory = 0; matched_preferred = 0; total_comparisons = 0
@@ -622,8 +610,8 @@ class CVAnalyzerApp:
             for name in unique_names:
                 pdf_path = os.path.join(cvs_dir, name + ".pdf"); docx_path = os.path.join(cvs_dir, name + ".docx")
                 text = None
-                
-                # --- UPDATED: Uses imported functions ---
+
+                # --- Uses imported functions ---
                 if os.path.exists(pdf_path): text = extract_text_from_pdf(pdf_path)
                 elif os.path.exists(docx_path): text = extract_text_from_docx(docx_path)
                 if not text: continue
@@ -750,7 +738,6 @@ class CVAnalyzerApp:
         """Refreshes the 'Performance Chart' tab with new data."""
         self.ax1.clear()
         
-        # --- ROBUST THEME FIX ---
         theme = sv_ttk.get_theme()
         if theme == "dark":
             bg_color = "#2b2b2b"
@@ -761,7 +748,6 @@ class CVAnalyzerApp:
         
         self.fig.patch.set_facecolor(bg_color)
         self.ax1.set_facecolor(bg_color)
-        # --- END FIX ---
 
         if not self.performance_data:
             self.ax1.set_title("No Performance Data to Display", color=fg_color)
@@ -778,7 +764,7 @@ class CVAnalyzerApp:
         times = [r['time'] for r in self.performance_data]
         comparisons = [r['comparisons'] for r in self.performance_data]
         
-        bar_color = 'blue' # Using hardcoded color
+        bar_color = 'blue'
         self.ax1.bar(algo_names, times, color=bar_color, label='Time (ms)')
         self.ax1.set_ylabel('Execution Time (ms)', color=bar_color)
         self.ax1.tick_params(axis='y', labelcolor=bar_color, colors=fg_color)
@@ -794,12 +780,11 @@ class CVAnalyzerApp:
         ax2.set_ylabel('Total Comparisons', color='red')
         ax2.tick_params(axis='y', labelcolor='red', colors='red')
         
-        # --- BUG FIX: Force integer ticks on the Y-axis ---
+        # --- Force integer ticks on the Y-axis ---
         ax2.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
         ax2.yaxis.set_major_formatter(
             mticker.FuncFormatter(lambda x, p: format(int(x), ','))
         )
-        # --- END BUG FIX ---
         
         ax2.spines['left'].set_color(bg_color)
         ax2.spines['bottom'].set_color(bg_color)
@@ -813,7 +798,6 @@ class CVAnalyzerApp:
         """Refreshes the 'Batch Chart' tab with aggregate data."""
         self.batch_ax1.clear()
 
-        # --- ROBUST THEME FIX ---
         theme = sv_ttk.get_theme()
         if theme == "dark":
             bg_color = "#2b2b2b"
@@ -824,7 +808,6 @@ class CVAnalyzerApp:
 
         self.batch_fig.patch.set_facecolor(bg_color)
         self.batch_ax1.set_facecolor(bg_color)
-        # --- END FIX ---
 
         if not self.batch_performance_data:
             self.batch_ax1.set_title("No Batch Data to Display", color=fg_color)
@@ -857,12 +840,10 @@ class CVAnalyzerApp:
         ax2.set_ylabel('Total Comparisons', color='red')
         ax2.tick_params(axis='y', labelcolor='red', colors='red')
         
-        # --- Apply Bug Fix to new chart as well ---
         ax2.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
         ax2.yaxis.set_major_formatter(
             mticker.FuncFormatter(lambda x, p: format(int(x), ','))
         )
-        # --- END FIX ---
         
         ax2.spines['left'].set_color(bg_color)
         ax2.spines['bottom'].set_color(bg_color)
@@ -889,6 +870,3 @@ class CVAnalyzerApp:
         for index, (val, k) in enumerate(l):
             tv.move(k, '', index)
         tv.heading(col, command=lambda: self.sort_treeview_column(tv, col, not reverse))
-
-# Note: The if __name__ == "__main__": block is intentionally removed.
-# It will be placed in main.py

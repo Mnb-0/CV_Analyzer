@@ -2,7 +2,7 @@
 # The main entry point for the CV Analyzer application.
 
 import tkinter as tk
-from app import CVAnalyzerApp  # <-- Import the GUI class from app.py
+from app import CVAnalyzerApp
 import sv_ttk
 
 if __name__ == "__main__":
