@@ -15,7 +15,7 @@ import pdfplumber
 import matplotlib.ticker as mticker
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-import sv_ttk  # <--- NEW: Import the theme
+import sv_ttk  # Import the theme
 
 # === ALGORITHM IMPLEMENTATIONS ===
 # (No changes in this section)
@@ -128,13 +128,12 @@ class CVAnalyzerApp:
     # Weights for weighted scoring
     MANDATORY_WEIGHT = 0.70  # 70%
     PREFERRED_WEIGHT = 0.30  # 30%
-    # --- REMOVED hard-coded penalty ---
 
     def __init__(self, root):
         """Constructor for the main application."""
         self.root = root
-        self.root.title("Intelligent CV Analyzer") # Title is cleaner
-        self.root.geometry("1100x750") # Reset to good size
+        self.root.title("Intelligent CV Analyzer")
+        self.root.geometry("1100x750")
 
         # --- Application State Variables ---
         self.cv_filepath = ""
@@ -149,7 +148,6 @@ class CVAnalyzerApp:
         self.batch_queue = queue.Queue()
         self.batch_thread = None
 
-        # --- NEW: Variable for penalty slider ---
         self.penalty_var = tk.DoubleVar(value=20.0) # Default 20% penalty
 
         # --- Main Layout ---
@@ -190,7 +188,8 @@ class CVAnalyzerApp:
         self.create_cv_text_tab_widgets()
         self.create_about_tab_widgets()
         
-        self.input_frame.grid_rowconfigure(3, weight=1) # Keywords text
+        self.input_frame.grid_rowconfigure(3, weight=0) # Make options frame static
+        self.input_frame.grid_rowconfigure(4, weight=1) # Make action frame container expand
         self.input_frame.grid_columnconfigure(0, weight=1)
         
         # --- Status Bar ---
@@ -203,7 +202,6 @@ class CVAnalyzerApp:
         
     # --- GUI Widget Builders ---
     
-    # --- UPDATED: create_input_widgets ---
     def create_input_widgets(self):
         """Populates the left-hand input frame with all controls."""
         self.input_frame.grid_propagate(False)
@@ -228,7 +226,6 @@ class CVAnalyzerApp:
         keywords_frame.grid(row=1, column=0, padx=10, pady=5, sticky="nsew")
         keywords_frame.grid_rowconfigure(0, weight=1)
         keywords_frame.grid_columnconfigure(0, weight=1)
-        # Set a min-height for this frame so it doesn't collapse
         keywords_frame.config(height=200) 
         
         self.keywords_text = tk.Text(keywords_frame, height=10, width=35, state=tk.DISABLED, wrap=tk.WORD, 
@@ -245,7 +242,7 @@ class CVAnalyzerApp:
         self.cv_filename_label = ttk.Label(cv_frame, text="No file loaded.", wraplength=300)
         self.cv_filename_label.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="w")
         
-        # --- NEW: Group 4: Scoring Options ---
+        # Group 4: Scoring Options
         options_frame = ttk.LabelFrame(self.input_frame, text="4. Scoring Options")
         options_frame.grid(row=3, column=0, padx=10, pady=5, sticky="nsew")
         options_frame.grid_columnconfigure(0, weight=1)
@@ -263,9 +260,8 @@ class CVAnalyzerApp:
         )
         self.penalty_slider.grid(row=1, column=0, padx=10, pady=(0, 10), sticky="ew")
 
-        # --- Group 5: Actions ---
+        # Group 5: Actions
         action_frame = ttk.Frame(self.input_frame)
-        # Use grid to push buttons to the bottom
         action_frame.grid(row=4, column=0, padx=10, pady=(20, 10), sticky="sew")
         action_frame.grid_columnconfigure(0, weight=1)
 
@@ -280,10 +276,6 @@ class CVAnalyzerApp:
             command=self.start_batch_analysis_thread
         )
         self.batch_button.grid(row=1, column=0, padx=5, pady=5, sticky="ew")
-        
-        # This makes the "Actions" frame stick to the bottom
-        self.input_frame.grid_rowconfigure(3, weight=0) # Options frame doesn't expand
-        self.input_frame.grid_rowconfigure(4, weight=1) # Action frame's container expands, pushing it down
 
     def update_penalty_label(self, value):
         """Callback to update the penalty label as the slider moves."""
@@ -368,7 +360,21 @@ class CVAnalyzerApp:
 
     def create_cv_text_tab_widgets(self):
         """Populates the 'Extracted CV Text' tab with a scrollable Text widget."""
-        self.cv_text_widget = tk.Text(self.tab_cv_text, wrap=tk.WORD, state=tk.DISABLED)
+        # --- FIX: Manually set theme colors for tk.Text ---
+        style = ttk.Style()
+        bg_color = style.lookup('TFrame', 'background')
+        fg_color = style.lookup('TLabel', 'foreground')
+
+        self.cv_text_widget = tk.Text(
+            self.tab_cv_text, 
+            wrap=tk.WORD, 
+            state=tk.DISABLED,
+            bg=bg_color,
+            fg=fg_color,
+            relief=tk.FLAT
+        )
+        # --- END FIX ---
+        
         self.cv_text_scrollbar = ttk.Scrollbar(
             self.tab_cv_text, orient=tk.VERTICAL, command=self.cv_text_widget.yview
         )
@@ -376,7 +382,7 @@ class CVAnalyzerApp:
         self.cv_text_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         self.cv_text_widget.pack(fill="both", expand=True, padx=5, pady=5)
 
-    # --- UPDATED: create_about_tab_widgets ---
+    # --- UPDATED: create_about_tab_widgets (FIXED) ---
     def create_about_tab_widgets(self):
         """Populates the 'About' tab with help text."""
         about_text_content = f"""
@@ -411,8 +417,28 @@ class CVAnalyzerApp:
         text_frame = ttk.Frame(self.tab_about, padding=10)
         text_frame.pack(fill=tk.BOTH, expand=True)
 
-        about_text = tk.Text(text_frame, wrap=tk.WORD, state=tk.NORMAL, bg=root.cget('bg'), relief=tk.FLAT,
-                             font=('TkDefaultFont', 10))
+        # --- FIX: Get theme-aware colors ---
+        # The tk.Text widget doesn't auto-style, so we must set its
+        # background and foreground manually by querying the theme.
+        style = ttk.Style()
+        # Get the background color of a standard TFrame
+        bg_color = style.lookup('TFrame', 'background')
+        # Get the foreground (text) color of a standard TLabel
+        fg_color = style.lookup('TLabel', 'foreground')
+
+        about_text = tk.Text(
+            text_frame, 
+            wrap=tk.WORD, 
+            state=tk.NORMAL, 
+            bg=bg_color,       # <--- CHANGED: Use theme background
+            fg=fg_color,       # <--- NEW: Use theme foreground
+            relief=tk.FLAT,    # Remove border
+            font=('TkDefaultFont', 10),
+            padx=5,            # Add a little internal padding
+            insertbackground=fg_color # Make the cursor visible if enabled
+        )
+        # --- END FIX ---
+        
         about_text.insert("1.0", about_text_content)
         about_text.config(state=tk.DISABLED) # Make read-only
         
@@ -497,7 +523,6 @@ class CVAnalyzerApp:
         else:
             self.cv_filename_label.config(text="Failed to read text from file.")
 
-    # --- UPDATED: run_analysis (uses penalty_var, no case_sensitive) ---
     def run_analysis(self):
         """Event handler for the 'Analyze CV' button. (Runs on main thread)"""
         self.status_label.config(text="Analyzing...")
@@ -517,7 +542,6 @@ class CVAnalyzerApp:
             return
 
         self.performance_data.clear()
-        # --- REMOVED: is_case_sensitive, now hardcoded to False ---
         cv_text_to_search = self.cv_text_content.lower()
         
         final_score = 0.0
@@ -531,7 +555,6 @@ class CVAnalyzerApp:
             start_time = time.perf_counter()
             
             for keyword in self.all_keywords_list:
-                # --- CHANGED: keyword_to_find is always lowercase ---
                 keyword_to_find = keyword.lower()
                 found_count, comparisons = algo_func(cv_text_to_search, keyword_to_find)
                 total_comparisons += comparisons
@@ -556,11 +579,8 @@ class CVAnalyzerApp:
 
             weighted_score = (score_mand * self.MANDATORY_WEIGHT) + (score_pref * self.PREFERRED_WEIGHT)
 
-            # Apply penalty if any mandatory skills are missing
             if matched_mandatory < len(self.mandatory_keywords):
-                # Get penalty from slider (e.g., 20.0)
                 penalty_percent = self.penalty_var.get()
-                # Calculate multiplier (e.g., 1.0 - (20.0 / 100.0) = 0.80)
                 penalty_multiplier = 1.0 - (penalty_percent / 100.0)
                 weighted_score *= penalty_multiplier
             
@@ -571,7 +591,6 @@ class CVAnalyzerApp:
                 "score": final_score, "matched": matched_keywords_list, "missing": missing_keywords_list
             })
 
-        # --- Update GUI ---
         if not self.performance_data:
             messagebox.showinfo("Info", "Analysis complete, but no data was generated.")
             self.status_label.config(text="Ready.")
@@ -591,7 +610,6 @@ class CVAnalyzerApp:
         
     # --- THREADING FUNCTIONS ---
     
-    # --- UPDATED: start_batch_analysis_thread (pass penalty_var) ---
     def start_batch_analysis_thread(self):
         """Validates inputs and starts the batch analysis worker thread."""
         if self.batch_thread and self.batch_thread.is_alive():
@@ -602,32 +620,26 @@ class CVAnalyzerApp:
             messagebox.showerror("Error", "Please select a job position first.")
             return
             
-        # --- NEW: Get penalty value from slider ---
         penalty_value = self.penalty_var.get()
 
         self.status_label.config(text="Running batch analysis... This may take a while.")
         self.batch_button.config(state=tk.DISABLED)
         self.analyze_button.config(state=tk.DISABLED)
 
-        # --- UPDATED: Pass penalty_value, remove case_sensitive ---
         self.batch_thread = threading.Thread(
             target=self.run_batch_analysis_worker, 
             args=(
                 self.mandatory_keywords.copy(), 
                 self.preferred_keywords.copy(), 
                 self.all_keywords_list.copy(),
-                penalty_value # Pass the penalty value
+                penalty_value
             ),
             daemon=True
         )
         self.batch_thread.start()
 
-    # --- UPDATED: run_batch_analysis_worker (use penalty_value) ---
     def run_batch_analysis_worker(self, mandatory_keywords, preferred_keywords, all_keywords, penalty_value):
-        """
-        This is the main batch logic. Runs on a WORKER thread.
-        Uses weighted scoring.
-        """
+        """This is the main batch logic. Runs on a WORKER thread."""
         try:
             cvs_dir = os.path.join("data", "cvs")
             if not os.path.exists(cvs_dir):
@@ -648,15 +660,13 @@ class CVAnalyzerApp:
                 elif os.path.exists(docx_path): text = extract_text_from_docx(docx_path)
                 if not text: continue
                 
-                # --- Hardcoded case-insensitive ---
                 text_to_search = text.lower()
                 
-                # --- 1. Calculate Weighted Score ---
+                # 1. Calculate Weighted Score
                 matched_mandatory = 0; matched_preferred = 0
                 scoring_keywords = mandatory_keywords | preferred_keywords
                 
                 for keyword in scoring_keywords:
-                    # --- Hardcoded case-insensitive ---
                     kw_find = keyword.lower()
                     found_count, _ = score_algo_func(text_to_search, kw_find)
                     if found_count > 0:
@@ -670,19 +680,18 @@ class CVAnalyzerApp:
                 
                 cv_score = (score_mand * self.MANDATORY_WEIGHT) + (score_pref * self.PREFERRED_WEIGHT)
                 if matched_mandatory < len(mandatory_keywords):
-                    # --- Use penalty_value passed to thread ---
                     penalty_multiplier = 1.0 - (penalty_value / 100.0)
                     cv_score *= penalty_multiplier
                 
                 batch_ui_data.append({"cv_name": name, "score": cv_score})
 
-                # --- 2. Calculate Performance ---
+                # 2. Calculate Performance
                 json_entry = {"cv_name": name, "score": cv_score, "results": []}
                 for algo_name, algo_func in self.ALGORITHMS.items():
                     total_comparisons = 0
                     start = time.perf_counter()
                     for kw in all_keywords: 
-                        kw_find = kw.lower() # Hardcoded
+                        kw_find = kw.lower()
                         _, comps = algo_func(text_to_search, kw_find)
                         total_comparisons += comps
                     end = time.perf_counter()
@@ -790,7 +799,7 @@ class CVAnalyzerApp:
             matched = self.matched_list.get(0, tk.END)
             missing = self.missing_list.get(0, tk.END)
             report_content = f"ANALYSIS REPORT FOR: {filename}\n"
-            report_content += "===================================\n\n"
+            report_content += "===================================\n"
             report_content += f"{score}\n\n"
             report_content += "--- MATCHED KEYWORDS ---\n"
             if matched:
@@ -825,9 +834,8 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = CVAnalyzerApp(root)
     
-    # --- NEW: Set the theme ---
+    # --- Set the theme ---
     # Call this *after* creating the app instance
-    # You can change "dark" to "light"
-    sv_ttk.set_theme("dark")
+    sv_ttk.set_theme("light") # You can change "dark" to "light"
     
     root.mainloop()
